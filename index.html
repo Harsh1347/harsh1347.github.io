@@ -10,9 +10,9 @@
 </head>
 <body>
   <header>
-    <nav style="background-color: #1e293b; padding: 1rem 2rem; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); display: flex; justify-content: space-between; align-items: center;">
-      <h1 style="color: #f8fafc; font-size: 1.5rem;">Harsh Gupta</h1>
-      <ul style="list-style: none; display: flex; gap: 1rem;">
+    <nav class="navbar">
+      <h1 class="logo">Harsh Gupta</h1>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -31,14 +31,14 @@
           <a href="#projects" class="btn">View My Work</a>
         </div>
         <div class="hero-image">
-          <img src="assets/img/ProfilePic.JPG" alt="Harsh Gupta" class="hero-img" />
+          <img src="assets/profile.jpg" alt="Harsh Gupta" class="hero-img square-profile" />
         </div>
       </div>
     </section>
   </header>
 
-  <section id="about" class="about">
-    <h2><i class="fas fa-user"></i> About Me</h2>
+  <section id="about" class="section">
+    <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
     <p>
       I’m a data-driven technologist with experience in building LLM-powered education assistants,
       dashboards, and tools that enhance learning. I thrive at the intersection of data, education,
@@ -46,16 +46,16 @@
     </p>
   </section>
 
-  <section id="education" class="education">
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+  <section id="education" class="section">
+    <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
     <ul>
       <li><strong>Indiana University Bloomington</strong> — MS in Computer Science (2024)</li>
       <li><strong>XYZ University</strong> — B.Tech in Computer Science (2022)</li>
     </ul>
   </section>
 
-  <section id="experience" class="experience">
-    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+  <section id="experience" class="section">
+    <h2 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h2>
     <ul>
       <li><strong>LLM Education Assistant Project</strong> — Built an AI assistant for education with hint-based learning and Semantic Kernel (2025)</li>
       <li><strong>Data Science Intern</strong> — Retail analytics with Power BI, modeled elasticity and improved insights for marketing (2023)</li>
@@ -63,23 +63,33 @@
   </section>
 
   <section id="projects" class="projects">
-    <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+    <h2 class="section-title"><i class="fas fa-laptop-code"></i> Projects</h2>
     <div class="project-grid">
       <div class="project-card">
-        <img src="assets/project1.png" alt="LLM Doubt Solver" />
-        <div class="project-info">
-          <h3>LLM Doubt Solving Assistant <a href="https://github.com/harsh1347/llm-doubt-solver" target="_blank" title="View Project"><i class="fas fa-external-link-alt"></i></a></h3>
-          <p>
+        <img src="assets/project1.png" alt="LLM Doubt Solver" class="project-image" />
+        <div class="project-content">
+          <h3 class="project-title">
+            LLM Doubt Solving Assistant
+            <a href="https://github.com/harsh1347/llm-doubt-solver" target="_blank" title="View Project">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          <p class="project-description">
             Built a dual-portal system for students and teachers using Mistral and Semantic Kernel.
             Integrated hint-based learning with Azure AI Search.
           </p>
         </div>
       </div>
       <div class="project-card">
-        <img src="assets/project2.png" alt="Power BI Dashboard" />
-        <div class="project-info">
-          <h3>Retail Sales Dashboard <a href="https://github.com/harsh1347/retail-sales-dashboard" target="_blank" title="View Project"><i class="fas fa-external-link-alt"></i></a></h3>
-          <p>
+        <img src="assets/project2.png" alt="Power BI Dashboard" class="project-image" />
+        <div class="project-content">
+          <h3 class="project-title">
+            Retail Sales Dashboard
+            <a href="https://github.com/harsh1347/retail-sales-dashboard" target="_blank" title="View Project">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          <p class="project-description">
             Created a dynamic Power BI dashboard using elasticity models and log-log regression
             to identify price sensitivity and boost retail decisions.
           </p>
@@ -88,8 +98,8 @@
     </div>
   </section>
 
-  <section id="achievements" class="achievements">
-    <h2><i class="fas fa-award"></i> Honors & Achievements</h2>
+  <section id="achievements" class="section">
+    <h2 class="section-title"><i class="fas fa-award"></i> Honors & Achievements</h2>
     <ul>
       <li>Awarded Best Capstone Project at Indiana University (2024)</li>
       <li>Top 1% in National Coding Olympiad</li>
@@ -97,8 +107,8 @@
     </ul>
   </section>
 
-  <section id="skills" class="skills">
-    <h2><i class="fas fa-tools"></i> Skills</h2>
+  <section id="skills" class="section">
+    <h2 class="section-title"><i class="fas fa-tools"></i> Skills</h2>
     <ul>
       <li>Python, JavaScript, SQL</li>
       <li>Power BI, Pandas, Scikit-learn</li>
@@ -107,8 +117,8 @@
     </ul>
   </section>
 
-  <section id="contact" class="contact">
-    <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+  <section id="contact" class="section">
+    <h2 class="section-title"><i class="fas fa-envelope"></i> Contact Me</h2>
     <p>Let's connect and build something amazing.</p>
     <ul>
       <li><i class="fas fa-envelope"></i> harsh@example.com</li>
