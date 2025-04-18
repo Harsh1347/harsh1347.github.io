@@ -10,9 +10,9 @@
 </head>
 <body>
   <header>
-    <nav>
-      <h1>Harsh Gupta</h1>
-      <ul>
+    <nav style="background-color: #1e293b; padding: 1rem 2rem; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); display: flex; justify-content: space-between; align-items: center;">
+      <h1 style="color: #f8fafc; font-size: 1.5rem;">Harsh Gupta</h1>
+      <ul style="list-style: none; display: flex; gap: 1rem;">
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -24,12 +24,16 @@
       </ul>
     </nav>
     <section class="hero">
-      <div class="hero-text">
-        <h2><span class="typed-text"></span><span class="cursor">|</span></h2>
-        <p>Turning questions into insights using AI & data</p>
-        <a href="#projects" class="btn">View My Work</a>
+      <div class="hero-container">
+        <div class="hero-text">
+          <h2><span class="typed-text"></span><span class="cursor">|</span></h2>
+          <p>Turning questions into insights using AI & data</p>
+          <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/img/ProfilePic.JPG" alt="Harsh Gupta" class="hero-img" />
+        </div>
       </div>
-      <img src="assets/img/ProfilePic.JPG" alt="Harsh Gupta" class="hero-img" />
     </section>
   </header>
 
@@ -60,24 +64,26 @@
 
   <section id="projects" class="projects">
     <h2><i class="fas fa-laptop-code"></i> Projects</h2>
-    <div class="project-card">
-      <img src="assets/project1.png" alt="LLM Doubt Solver" />
-      <div>
-        <h3>LLM Doubt Solving Assistant</h3>
-        <p>
-          Built a dual-portal system for students and teachers using Mistral and Semantic Kernel.
-          Integrated hint-based learning with Azure AI Search.
-        </p>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/project1.png" alt="LLM Doubt Solver" />
+        <div class="project-info">
+          <h3>LLM Doubt Solving Assistant <a href="https://github.com/harsh1347/llm-doubt-solver" target="_blank" title="View Project"><i class="fas fa-external-link-alt"></i></a></h3>
+          <p>
+            Built a dual-portal system for students and teachers using Mistral and Semantic Kernel.
+            Integrated hint-based learning with Azure AI Search.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="project-card">
-      <img src="assets/project2.png" alt="Power BI Dashboard" />
-      <div>
-        <h3>Retail Sales Dashboard</h3>
-        <p>
-          Created a dynamic Power BI dashboard using elasticity models and log-log regression
-          to identify price sensitivity and boost retail decisions.
-        </p>
+      <div class="project-card">
+        <img src="assets/project2.png" alt="Power BI Dashboard" />
+        <div class="project-info">
+          <h3>Retail Sales Dashboard <a href="https://github.com/harsh1347/retail-sales-dashboard" target="_blank" title="View Project"><i class="fas fa-external-link-alt"></i></a></h3>
+          <p>
+            Created a dynamic Power BI dashboard using elasticity models and log-log regression
+            to identify price sensitivity and boost retail decisions.
+          </p>
+        </div>
       </div>
     </div>
   </section>
