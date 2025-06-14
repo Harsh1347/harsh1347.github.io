@@ -1,17 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="assets/css/dark_theme_portfolio.css" />
-  <head>
-    <!-- Meta & SEO -->
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="I'm John Doe, and this is my personal portfolio website showcasing my projects and experience in electronics, communications and data science."
-    />
+    <meta name="description" content="I'm John Doe, and this is my personal portfolio website showcasing my projects and experience in electronics, communications and data science." />
     <meta name="keywords" content="John Doe, Portfolio, Electronics, Data Science, IoT" />
     <title>John Doe | Portfolio</title>
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon_dark.png" type="image/png" />
 
@@ -21,679 +17,80 @@
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-    <!-- Main CSS (Dark theme styles included) -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Dark Theme CSS -->
+    <link rel="stylesheet" href="assets/css/dark_theme_portfolio.css" />
 
     <!-- Animate on scroll CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- Inline Dark Theme Overrides (optional if not already in style.css) -->
-    <style>
-      body {
-        background-color: #121212;
-        color: #e0e0e0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
-      a {
-        color: #bb86fc;
-      }
-      /* Adjust nav, footer, and other backgrounds */
-      .header, .footer, .nav__menu, .services__modal-content {
-        background-color: #1f1f1f;
-      }
-      .button, .button--flex {
-        background-color: #bb86fc;
-        color: #121212;
-      }
-      /* You can add more dark-theme specific CSS as needed */
-    </style>
-  </head>
-
-  <body>
+</head>
+<body>
     <!-- HEADER -->
     <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">John Doe</a>
-        <div data-aos="fade-in" class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__items">
-              <a href="#home" class="nav__link active-link">
-                <i class="uil uil-estate nav__icon"></i> Home
-              </a>
-            </li>
-            <li class="nav__items">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i> About
-              </a>
-            </li>
-            <li class="nav__items">
-              <a href="#education" class="nav__link">
-                <i class="uil uil-graduation-cap nav__icon"></i> Education
-              </a>
-            </li>
-            <li class="nav__items">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file nav__icon"></i> Skills
-              </a>
-            </li>
-            <li class="nav__items">
-              <a href="#services" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i> Experience
-              </a>
-            </li>
-            <li class="nav__items">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i> Projects
-              </a>
-            </li>
-            <li class="nav__items">
-              <a href="#research" class="nav__link">
-                <i class="uil uil-book-open nav__icon"></i> Research
-              </a>
-            </li>
-            <li class="nav__items">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i> Contact Me
-              </a>
-            </li>
-          </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
-        </div>
-        <div class="nav__btns">
-          <!-- Theme Change button -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
+        <nav class="nav container">
+            <a href="#" class="nav__logo">John Doe</a>
+            <div data-aos="fade-in" class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__items"><a href="#home" class="nav__link active-link"><i class="uil uil-estate nav__icon"></i> Home</a></li>
+                    <li class="nav__items"><a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i> About</a></li>
+                    <li class="nav__items"><a href="#education" class="nav__link"><i class="uil uil-graduation-cap nav__icon"></i> Education</a></li>
+                    <li class="nav__items"><a href="#skills" class="nav__link"><i class="uil uil-file nav__icon"></i> Skills</a></li>
+                    <li class="nav__items"><a href="#services" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i> Experience</a></li>
+                    <li class="nav__items"><a href="#portfolio" class="nav__link"><i class="uil uil-scenery nav__icon"></i> Projects</a></li>
+                    <li class="nav__items"><a href="#research" class="nav__link"><i class="uil uil-book-open nav__icon"></i> Research</a></li>
+                    <li class="nav__items"><a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i> Contact</a></li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
+            </div>
+        </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN -->
     <main class="main">
-      <!-- HOME SECTION -->
-      <section class="home section" id="home">
-        <div data-aos="fade-left" class="home__container container grid">
-          <div class="home__content grid">
-            <div class="home__social">
-              <a href="mailto:john.doe@example.com" target="_blank" class="home__social-icon">
-                <i class="uil uil-envelope-alt"></i>
-              </a>
-              <a href="https://github.com/JohnDoe" target="_blank" class="home__social-icon">
-                <i class="uil uil-github-alt"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/johndoe" target="_blank" class="home__social-icon">
-                <i class="uil uil-linkedin-alt"></i>
-              </a>
-            </div>
-            <div data-aos="fade-right" class="home__img">
-              <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image class="home__blob-img" x="12" y="24" href="assets/img/profile.png" alt="Profile Picture" />
-                </g>
-              </svg>
-            </div>
-            <div class="home__data">
-              <h1 class="home__title">Hi! <span class="wave">👋</span> I’m John Doe</h1>
-              <h3 class="home__subtitle">
-                I’m <span class="auto-input"></span>
-              </h3>
-              <p class="home__description">
-                Experienced in electronics, communications and data science—with a knack for transforming data into actionable insights.
-              </p>
-              <a href="#contact" class="button button--flex">
-                Contact Me <i class="uil uil-message button__icon"></i>
-              </a>
-            </div>
-          </div>
-          <!-- Optional Scroll Down -->
-          <!-- <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button--flex">
-              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-              <span class="home__scroll-name"> Scroll down</span>
-              <i class="uil uil-arrow-down home__scroll-arrow"></i>
-            </a>
-          </div> -->
-        </div>
-      </section>
-
-      <!-- ABOUT SECTION -->
-      <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My Introduction</span>
-        <div data-aos="fade-left" class="about__container container grid">
-          <img src="assets/img/about_dark.jpg" alt="About Image" class="about__img" />
-          <div class="about__data">
-            <p class="about__description">
-              Hello! I'm John Doe—a passionate technologist with a strong foundation in electronics and communications, complemented by a minor in Data Science. I thrive on solving challenging problems, whether it’s designing innovative circuits or extracting insights from complex data.
-            </p>
-            <div class="about__info">
-              <div>
-                <span class="about__info-title">4+</span>
-                <span class="about__info-name">Years of<br />Experience</span>
-              </div>
-              <div>
-                <span class="about__info-title">15+</span>
-                <span class="about__info-name">Projects<br />Completed</span>
-              </div>
-              <div>
-                <span class="about__info-title">2</span>
-                <span class="about__info-name">Research<br />Publications</span>
-              </div>
-            </div>
-            <div class="about__buttons">
-              <a download href="assets/pdf/JohnDoe_Resume.pdf" class="button button--flex" aria-label="Download Resume">
-                Download Resume
-                <i class="uil uil-download-alt button__icon"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- EDUCATION SECTION -->
-      <section class="education section" id="education">
-        <h2 class="section__title">Education</h2>
-        <span class="section__subtitle">My Academic Journey</span>
-        <div data-aos="fade-up" class="education__container container grid">
-          <div class="education__content">
-            <div class="education__header">
-              <i class="uil uil-graduation-cap education__icon"></i>
-              <div>
-                <h1 class="education__title">Manipal Institute of Technology</h1>
-                <span class="education__subtitle">
-                  B.Tech in Electronics &amp; Communications <br />
-                  Minor in Data Science
-                </span>
-                <br />
-                <span class="education__subtitle">Aug 2019 - May 2023</span>
-                <br />
-                <span class="education__subtitle">GPA: 3.9 / 4.0</span>
-              </div>
-              <i class="uil uil-angle-down education__arrow"></i>
-            </div>
-            <div class="education__list grid">
-              <div class="education__data">
-                <div class="education__titles">
-                  <h3 class="education__name">Digital Electronics</h3>
-                </div>
-              </div>
-              <div class="education__data">
-                <div class="education__titles">
-                  <h3 class="education__name">Microprocessors</h3>
-                </div>
-              </div>
-              <div class="education__data">
-                <div class="education__titles">
-                  <h3 class="education__name">Communication Systems</h3>
-                </div>
-              </div>
-              <div class="education__data">
-                <div class="education__titles">
-                  <h3 class="education__name">Data Structures &amp; Algorithms</h3>
-                </div>
-              </div>
-              <!-- Add additional courses or relevant details as needed -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SKILLS SECTION -->
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My Technical Competence</span>
-        <div data-aos="fade-up" class="skills__container container grid">
-          <!-- PROGRAMMING & ANALYSIS -->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-brackets-curly skills__icon"></i>
-              <div>
-                <h1 class="skills__title">Programming &amp; Analysis</h1>
-                <span class="skills__subtitle">5+ years</span>
-              </div>
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Python</h3>
-                  <span class="skills__number">95%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__python"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">SQL</h3>
-                  <span class="skills__number">90%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__sql"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">MATLAB</h3>
-                  <span class="skills__number">85%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__matlab"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Advanced Excel</h3>
-                  <span class="skills__number">90%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__excel"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- DATA VISUALIZATION -->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-chart-bar skills__icon"></i>
-              <div>
-                <h1 class="skills__title">Data Visualization</h1>
-                <span class="skills__subtitle">4+ years</span>
-              </div>
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Power BI</h3>
-                  <span class="skills__number">90%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__powerbi"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Tableau</h3>
-                  <span class="skills__number">85%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__tableau"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Looker Studio</h3>
-                  <span class="skills__number">80%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__looker"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- CLOUD & DATABASES -->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-database skills__icon"></i>
-              <div>
-                <h1 class="skills__title">Cloud &amp; Databases</h1>
-                <span class="skills__subtitle">3+ years</span>
-              </div>
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">AWS</h3>
-                  <span class="skills__number">85%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__aws"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">MongoDB</h3>
-                  <span class="skills__number">75%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__mongodb"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- MACHINE LEARNING -->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-robot skills__icon"></i>
-              <div>
-                <h1 class="skills__title">Machine Learning</h1>
-                <span class="skills__subtitle">2+ years</span>
-              </div>
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">TensorFlow</h3>
-                  <span class="skills__number">80%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__tensorflow"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">PyTorch</h3>
-                  <span class="skills__number">85%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__pytorch"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">OpenCV</h3>
-                  <span class="skills__number">75%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__opencv"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- INDUSTRY EXPERIENCE SECTION -->
-      <section class="services section" id="services">
-        <h2 class="section__title">Industry Experience</h2>
-        <span class="section__subtitle">Professional Journey</span>
-        <div data-aos="fade-right" class="services__container container grid">
-          <!-- EXPERIENCE 1 -->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-web-grid services__icon"></i>
-              <h3 class="services__title">
-                Embedded Systems Intern <br />
-                @ XYZ Electronics
-              </h3>
-              <br />
-              <span class="services__date" style="color: #aaa; font-size: 0.9rem;">Jun 2022 - Aug 2022</span>
-            </div>
-            <span class="button button--flex button--small button--link services__button">
-              View More <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4 class="services__modal-title">
-                  Embedded Systems Intern <br />
-                  @ XYZ Electronics
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Developed firmware for microcontroller-based sensor platforms to improve data acquisition efficiency by 20%.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Assisted in the design and testing of PCB circuits for robust signal processing in industrial applications.</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- EXPERIENCE 2 -->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-arrow services__icon"></i>
-              <h3 class="services__title">
-                Data Science Intern <br />
-                @ ABC Data Labs
-              </h3>
-              <br />
-              <span class="services__date" style="color: #aaa; font-size: 0.9rem;">Jan 2022 - May 2022</span>
-            </div>
-            <span class="button button--flex button--small button--link services__button">
-              View More <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4 class="services__modal-title">
-                  Data Science Intern <br />
-                  @ ABC Data Labs
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Developed automated ETL pipelines using Python and AWS, reducing manual processing time by 30%.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Built predictive models with machine learning algorithms to drive insights from large-scale sensor data.</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROJECTS SECTION -->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">Projects</h2>
-        <span class="section__subtitle">Most Recent Work</span>
-        <div data-aos="fade-right" class="portfolio__container container swiper-container">
-          <div class="swiper-wrapper">
-            <!-- PROJECT 1 -->
-            <div class="portfolio__content grid swiper-slide">
-              <div class="portfolio__data project__data">
-                <h3 class="portfolio__title">Smart Energy Monitor Dashboard</h3>
-                <h5>Tech: Power BI, Python, SQL, Excel, DAX, Pandas</h5>
-                <p class="portfolio__description">
-                  Developed an interactive Power BI dashboard that aggregates and visualizes real-time energy consumption data, streamlining usage analysis for smart home devices.
-                </p>
-                <a href="https://github.com/JohnDoe/smart-energy-dashboard" class="button button--flex button--small portfolio_-button">
-                  View Source Code <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-            <!-- PROJECT 2 -->
-            <div class="portfolio__content grid swiper-slide">
-              <div class="portfolio__data project__data">
-                <h3 class="portfolio__title">IoT Sensor Data Analyzer</h3>
-                <h5>Tech: Python, JSON, Pandas, Matplotlib, Flask</h5>
-                <p class="portfolio__description">
-                  Built a web-based tool that collects, processes, and visualizes data from distributed IoT sensors, providing actionable insights for predictive maintenance.
-                </p>
-                <a href="https://github.com/JohnDoe/iot-sensor-analyzer" class="button button--flex button--small portfolio_-button">
-                  View Source Code <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-            <!-- PROJECT 3 -->
-            <div class="portfolio__content grid swiper-slide">
-              <div class="portfolio__data project__data">
-                <h3 class="portfolio__title">Wearable Health Data Analysis</h3>
-                <h5>Tech: Python, R, SQL, Power BI, Excel</h5>
-                <p class="portfolio__description">
-                  Analyzed large datasets collected from wearable devices to extract health trends and provide personalized feedback, improving overall user engagement.
-                </p>
-                <a href="https://github.com/JohnDoe/wearable-health-analysis" class="button button--flex button--small portfolio_-button">
-                  View Source Code <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-            <!-- PROJECT 4 -->
-            <div class="portfolio__content grid swiper-slide">
-              <div class="portfolio__data project__data">
-                <h3 class="portfolio__title">Autonomous Drone Navigation System</h3>
-                <h5>Tech: TensorFlow, Python, OpenCV, ROS</h5>
-                <p class="portfolio__description">
-                  Designed a deep learning-based navigation system for drones using computer vision and sensor fusion, achieving enhanced obstacle detection and path planning.
-                </p>
-                <a href="https://github.com/JohnDoe/drone-navigation-system" class="button button--flex button--small portfolio_-button">
-                  View Source Code <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-            <!-- PROJECT 5 -->
-            <div class="portfolio__content grid swiper-slide">
-              <div class="portfolio__data project__data">
-                <h3 class="portfolio__title">Smart Traffic Management System</h3>
-                <h5>Tech: Python, Pandas, Matplotlib, Machine Learning</h5>
-                <p class="portfolio__description">
-                  Engineered a data-driven traffic analysis system using real-time sensor data to optimize traffic flow and reduce congestion through predictive modeling.
-                </p>
-                <a href="https://github.com/JohnDoe/smart-traffic-management" class="button button--flex button--small portfolio_-button">
-                  View Source Code <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- (Optional: Add Swiper arrows or pagination here) -->
-        </div>
-      </section>
-
-      <!-- RESEARCH SECTION -->
-      <section class="research section" id="research">
-        <h2 class="section__title">Research</h2>
-        <span class="section__subtitle">Published Papers</span>
-        <div data-aos="fade-right" class="research__container container swiper-container">
-          <div class="swiper-wrapper">
-            <!-- PAPER 1 -->
-            <div class="research__content grid swiper-slide">
-              <div class="research__data">
-                <h3 class="research__title">Enhanced Signal Processing in Embedded Devices</h3>
-                <h5>Published in: IEEE Transactions on Industrial Electronics</h5>
-                <p class="research__description">
-                  Investigated advanced filtering techniques for real-time signal processing in embedded systems, resulting in a 20% improvement in accuracy.
-                </p>
-                <a href="https://ieeexplore.ieee.org/document/XXXXXXX" class="button button--flex button--small research__button">
-                  View Paper <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-            <!-- PAPER 2 -->
-            <div class="research__content grid swiper-slide">
-              <div class="research__data">
-                <h3 class="research__title">Machine Learning Approaches for IoT Data Analytics</h3>
-                <h5>Published in: International Journal of Data Science</h5>
-                <p class="research__description">
-                  Explored novel deep learning frameworks to harness IoT-generated data, boosting predictive accuracy by up to 15% compared to traditional methods.
-                </p>
-                <a href="https://drive.google.com/file/d/XXXXXXX/view" class="button button--flex button--small research__button">
-                  View Paper <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT SECTION -->
-      <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Get in touch</span>
-        <div data-aos="fade-in" class="contact__container container grid">
-          <div>
-            <div class="contact__information">
-              <div class="contact__1">
-                <i class="uil uil-envelope contact__icon"></i>
-                <div>
-                  <h3 class="contact__title">Email</h3>
-                  <span class="contact__subtitle">john.doe@example.com</span>
-                </div>
-              </div>
-              <div class="contact__2">
-                <i class="uil uil-github-alt contact__icon"></i>
-                <div>
-                  <h3 class="contact__title">Github</h3>
-                  <span class="contact__subtitle">https://github.com/JohnDoe</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <!-- Add sections here (home, about, education, etc.) -->
+        <!-- This HTML file links to a separate dark theme CSS: dark_theme_portfolio.css -->
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="footer__bg">
-        <div class="footer__container container grid">
-          <div>
-            <h1 class="footer__title">John Doe</h1>
-            <span class="footer__subtitle">Electronics &amp; Data Scientist</span>
-          </div>
-          <ul class="footer__links">
-            <li>
-              <a href="#services" class="footer__link">Experience</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer__link">Projects</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer__link">Contact Me</a>
-            </li>
-          </ul>
-          <div class="footer__socials">
-            <a href="mailto:john.doe@example.com" target="_blank" class="footer__social">
-              <i class="uil uil-envelope-alt"></i>
-            </a>
-            <a href="https://github.com/JohnDoe" target="_blank" class="footer__social">
-              <i class="uil uil-github-alt"></i>
-            </a>
-          </div>
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">John Doe</h1>
+                    <span class="footer__subtitle">Electronics & Data Scientist</span>
+                </div>
+                <ul class="footer__links">
+                    <li><a href="#services" class="footer__link">Experience</a></li>
+                    <li><a href="#portfolio" class="footer__link">Projects</a></li>
+                    <li><a href="#contact" class="footer__link">Contact Me</a></li>
+                </ul>
+                <div class="footer__socials">
+                    <a href="mailto:john.doe@example.com" target="_blank" class="footer__social"><i class="uil uil-envelope-alt"></i></a>
+                    <a href="https://github.com/JohnDoe" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>
+                </div>
+            </div>
         </div>
-        <!-- <p class="footer__copy">&copy; 2025 John Doe | All Rights Reserved</p> -->
-      </div>
     </footer>
 
     <!-- SCROLL TO TOP -->
-    <div>
-      <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
-      </a>
-    </div>
+    <a href="#" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup__icon"></i></a>
 
-    <!-- SWIPER JS -->
+    <!-- SCRIPTS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
-    <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
-    <!-- TYPED JS for Animated Text -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-      var typed = new Typed(".auto-input", {
-        strings: [
-          "an Electronics Engineer",
-          "a Data Enthusiast",
-          "a Problem Solver"
-        ],
-        typeSpeed: 100,
-        backSpeed: 100,
-        loop: true,
-      });
+        var typed = new Typed(".auto-input", {
+            strings: ["an Electronics Engineer", "a Data Enthusiast", "a Problem Solver"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
     </script>
-    <!-- AOS JS for Scroll Animations -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 300,
-        duration: 2000
-      });
-    </script>
-  </body>
+    <script>AOS.init({ offset: 300, duration: 2000 });</script>
+</body>
 </html>
