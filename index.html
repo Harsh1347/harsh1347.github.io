@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="I'm John Doe, and this is my personal portfolio website showcasing my projects and experience in electronics, communications and data science." />
-  <meta name="keywords" content="John Doe, Portfolio, Electronics, Data Science, IoT" />
+  <meta name="description" content="John Doe - Electronics Engineer and Data Scientist Portfolio" />
+  <meta name="keywords" content="John Doe, Portfolio, Electronics, Data Science, Projects" />
   <title>John Doe | Portfolio</title>
 
   <!-- Favicon -->
@@ -17,11 +17,34 @@
   <!-- SWIPER CSS -->
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-  <!-- Updated Dark Theme CSS -->
-  <link rel="stylesheet" href="assets/css/dark_theme_portfolio_updated.css" />
+  <!-- Dark Theme CSS -->
+  <link rel="stylesheet" href="assets/css/dark_theme_portfolio.css" />
 
-  <!-- Animate on scroll -->
+  <!-- Animate on Scroll -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    main.main {
+      padding-top: 6rem;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+    }
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 1rem;
+    }
+  </style>
 </head>
 <body>
   <!-- HEADER -->
@@ -48,67 +71,71 @@
     </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main class="main" style="padding-top: 5rem;">
-    <!-- HOME -->
-    <section class="section" id="home">
-      <h2 class="section__title">Welcome</h2>
-      <p class="section__subtitle">Electronics Engineer | Data Scientist | IoT Enthusiast</p>
+  <!-- MAIN -->
+  <main class="main">
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Hello! I'm John Doe — a passionate Electronics and Communication Engineer with a minor in Data Science, aiming to merge hardware and AI for smarter systems.</p>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <h2 class="section__title">About Me</h2>
-      <p>Hello! I'm John Doe, an electronics & communication engineer with a minor in Data Science from Manipal Institute of Technology. I love solving problems that sit at the intersection of hardware and intelligence.</p>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I specialize in designing intelligent systems using embedded electronics, machine learning, and cloud integration. Whether it's automating a process or building a data dashboard, I bring creativity and clarity to every project.</p>
     </section>
 
-    <!-- EDUCATION -->
-    <section class="section" id="education">
-      <h2 class="section__title">Education</h2>
-      <p><strong>Manipal Institute of Technology</strong> — B.Tech in Electronics and Communication, Minor in Data Science (2019–2023)</p>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <h2 class="section__title">Skills</h2>
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Manipal Institute of Technology</strong> — B.Tech in Electronics & Communication Engineering, Minor in Data Science (2019–2023)</p>
       <ul>
-        <li>Python, SQL, MATLAB</li>
-        <li>TensorFlow, PyTorch, OpenCV</li>
-        <li>Power BI, Tableau, Looker Studio</li>
-        <li>AWS, MongoDB</li>
+        <li>GPA: 9.1 / 10</li>
+        <li>Relevant Coursework: Machine Learning, Embedded Systems, Signal Processing, Data Structures</li>
       </ul>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section" id="services">
-      <h2 class="section__title">Experience</h2>
-      <p><strong>Data Science Intern @ ABC Labs</strong> – Built ML pipelines and dashboards for IoT devices. (Jan 2022 - May 2022)</p>
-      <p><strong>Embedded Intern @ XYZ Electronics</strong> – Worked on sensor integration for robotics prototypes. (Jun 2022 - Aug 2022)</p>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section" id="portfolio">
-      <h2 class="section__title">Projects</h2>
+    <section id="skills">
+      <h2>Skills</h2>
       <ul>
-        <li><strong>Smart Traffic Monitoring</strong> – ML-based camera analytics to predict congestion.</li>
-        <li><strong>IoT Data Platform</strong> – Real-time data ingestion & visualization for sensor networks.</li>
-        <li><strong>Crop Disease Detection</strong> – Deep learning on leaf images to assist farmers.</li>
+        <li><strong>Programming:</strong> Python, C++, MATLAB, SQL</li>
+        <li><strong>Frameworks:</strong> TensorFlow, PyTorch, OpenCV</li>
+        <li><strong>Visualization:</strong> Power BI, Tableau, Looker Studio</li>
+        <li><strong>Cloud & Databases:</strong> AWS, Firebase, MongoDB</li>
       </ul>
     </section>
 
-    <!-- RESEARCH -->
-    <section class="section" id="research">
-      <h2 class="section__title">Research</h2>
-      <p><strong>Hybrid Image Enhancement for Semantic Segmentation</strong> – Published in IEEE INCOFT 2023.</p>
-      <p><strong>Handwritten OCR Using CRNN</strong> – Presented at IJDS Conference 2022.</p>
+    <section id="services">
+      <h2>Experience</h2>
+      <p><strong>Embedded Intern @ XYZ Robotics</strong> (Jun 2022 – Aug 2022)</p>
+      <ul>
+        <li>Built real-time sensor dashboards for industrial robots using Arduino and Python.</li>
+        <li>Optimized signal filtering with Kalman Filters and FFT techniques.</li>
+      </ul>
+      <p><strong>Data Science Intern @ ABC Data Labs</strong> (Jan 2022 – May 2022)</p>
+      <ul>
+        <li>Developed predictive models to identify hardware failure using time series data.</li>
+        <li>Implemented dashboards in Power BI to track key operational KPIs.</li>
+      </ul>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <h2 class="section__title">Contact</h2>
-      <p>Email: john.doe@example.com</p>
-      <p>GitHub: <a href="https://github.com/JohnDoe">github.com/JohnDoe</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
+    <section id="portfolio">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>IoT Energy Monitoring System:</strong> Built an ESP32-based system to track household energy usage with live dashboards.</li>
+        <li><strong>Gesture Controlled Drone:</strong> Used accelerometer and Arduino to fly a drone with hand gestures.</li>
+        <li><strong>Crop Disease Classifier:</strong> Created a CNN-based mobile app to detect plant diseases from images.</li>
+      </ul>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p><strong>GARP: A Hybrid Preprocessing Technique for Semantic Segmentation</strong> — Published in IEEE INCOFT 2023</p>
+      <p><strong>CRBC: An Automated Handwriting OCR System</strong> — Presented at IJDS Conference 2022</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> john.doe@example.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/JohnDoe">github.com/JohnDoe</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
     </section>
   </main>
 
@@ -136,7 +163,7 @@
   <!-- SCROLL TO TOP -->
   <a href="#" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup__icon"></i></a>
 
-  <!-- JS -->
+  <!-- Scripts -->
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
