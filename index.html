@@ -1,181 +1,574 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="John Doe - Electronics Engineer and Data Scientist Portfolio" />
-  <meta name="keywords" content="John Doe, Portfolio, Electronics, Data Science, Projects" />
-  <title>John Doe | Portfolio</title>
+  <title>Harsh Gupta | Data & AI Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/img/favicon_dark.png" type="image/png" />
-
-  <!-- UNICONS -->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-
-  <!-- SWIPER CSS -->
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-
-  <!-- Dark Theme CSS -->
-  <link rel="stylesheet" href="assets/css/dark_theme_portfolio.css" />
-
-  <!-- Animate on Scroll -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <style>
-    main.main {
-      padding-top: 6rem;
+  </script>
+  <!-- <style>
+    .link-btns, .resume-btn, .contact-info {
+      margin-top: 1rem;
     }
-    section {
-      padding: 4rem 2rem;
-      max-width: 960px;
-      margin: auto;
+    .intro-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.5rem;
+    .resume-btn {
+      background-color: #0077b5;
+      color: white;
+      padding: 0.7em 1.4em;
+      border-radius: 30px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
     }
-    p, li {
-      font-size: 1rem;
-      line-height: 1.6;
+    .resume-btn:hover {
+      background-color: #005f8d;
     }
-    ul {
-      padding-left: 1rem;
+    .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 1rem;
     }
-  </style>
+    .contact-info a {
+      color: #0077b5;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+      .edu-block {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .edu-item {
+      background: #fff;
+      border-left: 4px solid #0f0f0f;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    .edu-institute {
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .edu-detail {
+      margin: 0;
+      color: #555;
+    }
+    .edu-year {
+      color: #999;
+      font-size: 0.9rem;
+      margin-left: 6px;
+    }
+</style> -->
 </head>
+
 <body>
-  <!-- HEADER -->
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo">John Doe</a>
-      <div data-aos="fade-in" class="nav__menu" id="nav-menu">
-        <ul class="nav__list grid">
-          <li class="nav__items"><a href="#home" class="nav__link active-link"><i class="uil uil-estate nav__icon"></i> Home</a></li>
-          <li class="nav__items"><a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i> About</a></li>
-          <li class="nav__items"><a href="#education" class="nav__link"><i class="uil uil-graduation-cap nav__icon"></i> Education</a></li>
-          <li class="nav__items"><a href="#skills" class="nav__link"><i class="uil uil-file nav__icon"></i> Skills</a></li>
-          <li class="nav__items"><a href="#services" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i> Experience</a></li>
-          <li class="nav__items"><a href="#portfolio" class="nav__link"><i class="uil uil-scenery nav__icon"></i> Projects</a></li>
-          <li class="nav__items"><a href="#research" class="nav__link"><i class="uil uil-book-open nav__icon"></i> Research</a></li>
-          <li class="nav__items"><a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i> Contact</a></li>
-        </ul>
-        <i class="uil uil-times nav__close" id="nav-close"></i>
-      </div>
-      <div class="nav__btns">
-        <i class="uil uil-moon change-theme" id="theme-button"></i>
-        <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
-      </div>
-    </nav>
-  </header>
+  <nav class="sidebar">
+    <button id="toggleSidebar" title="Toggle Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <a href="#intro"><i class="fas fa-user"></i> <span>About Me</span></a>
+    <a href="#education"><i class="fas fa-university"></i> <span>Education</span></a>
+    <a href="#experience"><i class="fas fa-briefcase"></i> <span>Experience</span></a>
+    <a href="#projects"><i class="fas fa-lightbulb"></i> <span>Projects & Publications</span></a>
+    <a href="#skills"><i class="fas fa-tools"></i> <span>Skills</span></a>
+    <a href="#honors"><i class="fas fa-certificate"></i> <span>Certification & Honors</span></a>
+    <!-- <a href="#contact"><i class="fas fa-envelope"></i> <span>Contact</span></a> -->
+  </nav>
 
-  <!-- MAIN -->
-  <main class="main">
-    <section id="home">
-      <h2>Welcome</h2>
-      <p>Hello! I'm John Doe — a passionate Electronics and Communication Engineer with a minor in Data Science, aiming to merge hardware and AI for smarter systems.</p>
-    </section>
-
+  <main>
+    <header class="intro-container" id="intro">
+      <div class="intro-img">
+        <img class="profile-pic" src="media/Images/HarshGupta.jpg" alt="Harsh Gupta Photo">
+      </div>
+      <div class="intro-text">
+        <h1>Harsh Gupta</h1>
+        <p>AI Engineer @ Indiana University | Building AI Products with LLMs & Data<br>3+ Years of Experience in Data &
+          AI roles <br> Ex-Deloitte | Ex-Samsung Research Intern</p>
+        <p>Seeking Part-Time Remote Fall Internship & Full-Time Roles (May 2026)</p>
+        <div class="link-btns">
+          <a href="https://www.linkedin.com/in/harshg1347/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/Harsh1347" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://scholar.google.com/citations?user=7bmWYigAAAAJ&hl=en" target="_blank">
+            <i class="fas fa-graduation-cap"></i> Google Scholar
+          </a>
+          <a href="mailto:hagupta@iu.edu">
+            <i class="fas fa-envelope"></i> hagupta@iu.edu
+          </a>
+        </div>
+        <a class="resume-btn" href="media/Resume/HarshML.pdf" download>
+          <i class="fas fa-file-download"></i> Download Resume
+        </a>
+      </div>
+    </header>
     <section id="about">
       <h2>About Me</h2>
-      <p>I specialize in designing intelligent systems using embedded electronics, machine learning, and cloud integration. Whether it's automating a process or building a data dashboard, I bring creativity and clarity to every project.</p>
+      <p>
+        I'm Harsh Gupta, with over <strong>3 years of experience</strong> in <strong>AI and Data roles</strong> across
+        diverse industries including <strong>education</strong>, <strong>research</strong>, <strong>retail</strong>, and
+        <strong>insurance</strong>. I’ve contributed to projects at <strong>Deloitte</strong> and <strong>Samsung
+          Research</strong>, working on everything from <strong>data engineering</strong> and <strong>analysis</strong>
+        to <strong>computer vision</strong> and <strong>intelligent automation</strong>.<br><br>
+
+        Currently, I'm pursuing a <strong>Master’s in Data Science</strong> at <strong>Indiana University
+          Bloomington</strong> while working part-time as an <strong>ML/AI intern</strong>. I completed my undergraduate
+        studies at <strong>Manipal Institute of Technology</strong> with a major in <strong>Electronics & Communication
+          Engineering</strong> and a <strong>Minor in Data Science</strong> — the spark that set me on my path toward
+        applied AI.<br><br>
+
+        What drives me is <strong>building systems that don’t just work — but learn, adapt, and scale</strong>. I love
+        <strong>automating repetitive tasks</strong>, <strong>designing LLM-powered assistants</strong>, and
+        <strong>creating tools that support better decision-making</strong>. Whether it’s <strong>optimizing retail
+          pricing</strong>, <strong>enhancing educational platforms</strong>, or <strong>accelerating developer
+          workflows</strong>, I enjoy applying AI to create meaningful impact.
+        <br>
+        <strong><a href="mailto:hagupta@iu.edu">Let’s connect</a> — I’d love to hear what you’re working on!</strong>
+
+      </p>
+
     </section>
 
     <section id="education">
-      <h2>Education</h2>
-      <p><strong>Manipal Institute of Technology</strong> — B.Tech in Electronics & Communication Engineering, Minor in Data Science (2019–2023)</p>
-      <ul>
-        <li>GPA: 9.1 / 10</li>
-        <li>Relevant Coursework: Machine Learning, Embedded Systems, Signal Processing, Data Structures</li>
-      </ul>
+      <h2><i class="fas fa-university"></i> Education</h2>
+      <div class="edu-block">
+        <div class="edu-item">
+          <div class="edu-institute">
+            <img src="media/Images/IU-logo.jpg" alt="IUB" class="edu-logo">
+            <strong>Indiana University Bloomington, USA</strong>
+          </div>
+          <p class="edu-detail">MS in Data Science <span class="edu-year">(Aug 2024 – May 2026)</span></p>
+          <p class="edu-detail">GPA: 4/4</p>
+        </div>
+        <div class="edu-item">
+          <div class="edu-institute">
+            <img src="media/Images/Manipal-logo.jpeg" alt="Manipal" class="edu-logo">
+            <strong>Manipal Institute of Technology, India</strong>
+          </div>
+          <p class="edu-detail">B.Tech in Electronics & Communication Engineering </p>
+          <p class="edu-detail">Minor in Data Science <span class="edu-year">(Jul 2017 – May 2021)</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2> <i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="edu-block">
+        <div class="edu-item">
+          <div class="edu-institute">
+            <img src="media/Images/IUB-AUX-logo.jpeg" alt="IUB" class="edu-logo">
+            <strong>Indiana University Campus Auxiliaries</strong>
+          </div>
+          <p class="edu-detail">AI Engineer Intern <span class="edu-year">(Jun 2025 – Present)</span></p>
+        </div>
+        <div class="edu-item">
+          <div class="edu-institute">
+            <img src="media/Images/IU-logo.jpg" alt="IUB" class="edu-logo">
+            <strong>Indiana University Bloomington</strong>
+          </div>
+          <p class="edu-detail">Part-Time ML Engineer <span class="edu-year">(Oct 2024 – Present)</span></p>
+        </div>
+        <div class="edu-item">
+          <div class="edu-institute">
+            <img src="media/Images/Deloitte-logo.jpeg" alt="Deloitte" class="edu-logo">
+            <strong>Deloitte</strong>
+          </div>
+          <p class="edu-detail">Data Engineer & Scientist <span class="edu-year">(Sep 2021 – Jul 2024)</span></p>
+        </div>
+        <div class="edu-item">
+          <div class="edu-institute">
+            <img src="media/Images/Samsung-logo.png" alt="Samsung" class="edu-logo">
+            <strong>Samsung Research</strong>
+          </div>
+          <p class="edu-detail">Computer Vision Research Intern <span class="edu-year">(Jan 2021 – Jun 2021)</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2><i class="fas fa-lightbulb"></i> Projects & Publications</h2>
+
+      <details>
+        <summary>Publications</summary>
+        <div class="grid-3">
+          <div class="project-card">
+            <h3>Star identification in night sky images using mobile phone camera</h3>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9774242" target="_blank" class="github-link">
+              <i class="fas fa-file-alt"></i> View Paper
+            </a>
+            <!-- <p>Link:<a href="https://ieeexplore.ieee.org/abstract/document/9774242" target="_blank">https://ieeexplore.ieee.org/abstract/document/9774242</a></p> -->
+            <!-- <p class="tags">#SW #Bot</p> -->
+          </div>
+          <div class="project-card">
+            <h3>Cross-Geography Generalization of Machine Learning Methods for Classification of Flooded Regions in Aerial Images</h3>
+            <a href="https://arxiv.org/abs/2210.01588" target="_blank" class="github-link">
+              <i class="fas fa-file-alt"></i> View Paper
+            </a>
+            <!-- <p>Link:<a href="https://arxiv.org/abs/2210.01588" target="_blank"></a></p> -->
+            <!-- <p class="tags">#DS #Covid</p> -->
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>AI / ML</summary>
+        <div class="grid-3">
+          <div class="project-card">
+            <h3>TA-Lite</h3>
+            <p>A modular, instructor-aligned teaching assistant powered by LLMs.</p>
+            <a href="https://github.iu.edu/hagupta/TA-Lite" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+            <a href="https://www.youtube.com/watch?v=fAarlPmUz_4" target="_blank" class="github-link">
+              <i class="fab fa-youtube"></i> View Demo
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>MockChain</h3>
+            <p>Multi-agent AI-powered mock interview platform with personalized feedback.</p>
+            <a href="https://github.iu.edu/hagupta/MockChain" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+            <a href="https://www.youtube.com/watch?v=PiKd0AuFQQ0" target="_blank" class="github-link">
+              <i class="fab fa-youtube"></i> View Demo
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>DataLens</h3>
+            <p>LLM-powered RAG search and Q&A for structured and unstructured data. Internal Deloitte Project</p>
+            <a href="media/Cert_Achi/Applause Award-Hackathon.pdf.png" target="_blank" class="github-link">
+              <i class="fas fa-award"></i> View Certificate
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Online Sign Recognition</h3>
+            <p>Time-series handwriting recognition and fraud detection.</p>
+            <a href="media/Pdf/Report_Harsh_Gupta.pdf" target="_blank" class="github-link">
+              <i class="fas fa-file-alt"></i> View Report
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Music Emotion Recognition</h3>
+            <p>Classify music into emotions using ML.</p>
+            <a href="media/Pdf/MER_Draft_Paper.pdf" target="_blank" class="github-link">
+              <i class="fas fa-file-alt"></i> View Report
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Flight Price Prediction</h3>
+            <p>Collected data and trained model to predict flight prices.</p>
+            <a href="https://github.com/Harsh1347/Flight_Fare_Prediction" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Data Science, Engineering & Visualization</summary>
+        <div class="grid-3">
+          <div class="project-card">
+            <h3>Retail Sales Price Optimization</h3>
+            <p>Used price elasticity modeling to recommend optimal pricing in retail.</p>
+            <a href="https://github.com/Harsh1347/Retail-Sales-Price-Optimization" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Retail Store Pricing Dashboard</h3>
+            <p>Dashboard for visualizing product and city trends in retail pricing.</p>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiNDJiMjU5YWMtYTg1YS00NGZjLTkzNTEtM2Q5MjEyZTgwZmRmIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9" target="_blank" class="github-link">
+              <i class="fas fa-chart-line"></i> View Dashboard
+            </a>
+            <a href="https://github.com/Harsh1347/Retail-Store-Pricing-Dashboard" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>CodETL</h3>
+            <p>ETL engine with rule-based code generation. Cut dev time by 40%. (Deloitte Internal Project)</p>
+          </div>
+          <div class="project-card">
+            <h3>Info Viz Dashboard</h3>
+            <p>Interactive visual dashboard built for information visualization final project.</p>
+            <a href="https://public.tableau.com/app/profile/ishwari.dawkhar/viz/InfoViz_FinalDashboard/Dashboard_Image2" target="_blank" class="github-link">
+              <i class="fas fa-chart-line"></i> View Dashboard
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Covid Dashboard</h3>
+            <p>Dashboard that scraped and visualized India's COVID-19 stats.</p>
+            <a href="https://github.com/Harsh1347/Covid-19-India-DashBoard" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Computer Vision</summary>
+        <div class="grid-3">
+          <div class="project-card">
+            <h3>Drowsy Driver Assistant</h3>
+            <p>Final semester CV project (details available on request).</p>
+            <a href="media/Images/ComputerVisionPoster.png" target="_blank" class="github-link">
+              <i class="fas fa-file-alt"></i> View Poster
+            </a>
+            <a href="https://www.youtube.com/watch?v=3adJHVBXS8U" target="_blank" class="github-link">
+              <i class="fab fa-youtube"></i> View Demo
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Astrophotography</h3>
+            <p>Star detection in mobile night sky images (Samsung R&D).</p>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9774242" target="_blank" class="github-link">
+              <i class="fas fa-file-alt"></i> View Paper
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Estimation of Flooded Regions</h3>
+            <p>Cross-region flood segmentation using UAV aerial imagery.</p>
+            <a href="https://arxiv.org/abs/2210.01588" target="_blank" class="github-link">
+              <i class="fas fa-file-alt"></i> View Paper
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Virtual Mouse using Python-OpenCV</h3>
+            <p>Gesture-based virtual mouse using OpenCV hand tracking.</p>
+            <a href="https://github.com/Harsh1347/OpenCV_Work" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Image to Text using CNN</h3>
+            <p>Handwritten text to digital using OpenCV and CNN prediction.</p>
+            <a href="https://github.com/Harsh1347/Image-to-Text-OpenCV" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Miscellaneous</summary>
+        <div class="grid-3">
+          <div class="project-card">
+            <h3>Streamlit Youtube Playlist</h3>
+            <p>Create a series of video explaining how to use streamlit. Gathered over 210k views and 13.5k hrs of watch time</p>
+            <a href="https://www.youtube.com/playlist?list=PLuU3eVwK0I9PT48ZBYAHdKPFazhXg76h5" target="_blank" class="github-link">
+              <i class="fab fa-youtube"></i> View on Youtube
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Sneaker Update Bot</h3>
+            <p>Discord bot to notify sneaker drops & restocks using scraping.</p>
+            <a href="https://github.com/Harsh1347/Sneaker-Notification-Discord-Bot" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Covid Vaccine Appointment Bot</h3>
+            <p>Alerts for vaccine slots by scraping using zip codes.</p>
+            <!-- <a href="https://github.com/Harsh1347/TA-Lite" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a> -->
+          </div>
+        </div>
+      </details>
+
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Programming:</strong> Python, C++, MATLAB, SQL</li>
-        <li><strong>Frameworks:</strong> TensorFlow, PyTorch, OpenCV</li>
-        <li><strong>Visualization:</strong> Power BI, Tableau, Looker Studio</li>
-        <li><strong>Cloud & Databases:</strong> AWS, Firebase, MongoDB</li>
-      </ul>
+      <h2><i class="fas fa-tools"></i> Skills</h2>
+      <p><strong>Programming:</strong> Python, R, PySpark, SQL</p>
+      <p><strong>Cloud/Data:</strong> AWS, Azure, OracleDB, Redshift, Hadoop</p>
+      <p><strong>ML:</strong> Regression, CV, Time Series, RecSys, MLOps, Deployment</p>
+      <p><strong>LLM Tools:</strong> Langchain, Ollama, Hugging Face, RAG</p>
     </section>
-
-    <section id="services">
-      <h2>Experience</h2>
-      <p><strong>Embedded Intern @ XYZ Robotics</strong> (Jun 2022 – Aug 2022)</p>
-      <ul>
-        <li>Built real-time sensor dashboards for industrial robots using Arduino and Python.</li>
-        <li>Optimized signal filtering with Kalman Filters and FFT techniques.</li>
-      </ul>
-      <p><strong>Data Science Intern @ ABC Data Labs</strong> (Jan 2022 – May 2022)</p>
-      <ul>
-        <li>Developed predictive models to identify hardware failure using time series data.</li>
-        <li>Implemented dashboards in Power BI to track key operational KPIs.</li>
-      </ul>
-    </section>
-
-    <section id="portfolio">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>IoT Energy Monitoring System:</strong> Built an ESP32-based system to track household energy usage with live dashboards.</li>
-        <li><strong>Gesture Controlled Drone:</strong> Used accelerometer and Arduino to fly a drone with hand gestures.</li>
-        <li><strong>Crop Disease Classifier:</strong> Created a CNN-based mobile app to detect plant diseases from images.</li>
-      </ul>
-    </section>
-
-    <section id="research">
-      <h2>Research</h2>
-      <p><strong>GARP: A Hybrid Preprocessing Technique for Semantic Segmentation</strong> — Published in IEEE INCOFT 2023</p>
-      <p><strong>CRBC: An Automated Handwriting OCR System</strong> — Presented at IJDS Conference 2022</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> john.doe@example.com</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/JohnDoe">github.com/JohnDoe</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer__bg">
-      <div class="footer__container container grid">
-        <div>
-          <h1 class="footer__title">John Doe</h1>
-          <span class="footer__subtitle">Electronics & Data Science</span>
+    
+    <section id="honors">
+      <h2><i class="fas fa-award"></i> Honors & Certifications</h2>
+      <details open>
+        <summary>Certifications</summary>
+        <div class="grid-3">
+          <div class="project-card">
+            <h3>IBM Professional Certification</h3>
+            <a href="media/Cert_Achi/DataScienceCoursera.pdf.png" target="_blank">
+            <img src="media/Cert_Achi/DataScienceCoursera.pdf.png" alt="Certificate 1" class="certificate-img">
+            </a>
+            <p class="tags">#AI #LLM #EdTech</p>
+          </div>
+          <div class="project-card">
+            <h3>Deloitte AI Academy</h3>
+            <a href="media/Cert_Achi/Deloitte_AI_Academy_Harsh Gupta.pdf.png" target="_blank">
+            <img src="media/Cert_Achi/Deloitte_AI_Academy_Harsh Gupta.pdf.png" alt="Certificate 2"class="certificate-img">
+            </a>
+            <p class="tags">#AI #LLM #Interview</p>
+          </div>
+          <div class="project-card">
+            <h3>APEX Certificate</h3>
+            <a href="media/Cert_Achi/APEX_2022_Certificate.png" target="_blank">
+            <img src="media/Cert_Achi/APEX_2022_Certificate.png" alt="Certificate 4"class="certificate-img">
+            </a>
+            <p class="tags">#AI #LLM #RAG</p>
+          </div>
+          <div class="project-card">
+            <h3>Tableau</h3>
+            <a href="media/Cert_Achi/TableauCert.jpeg" target="_blank">
+            <img src="media/Cert_Achi/TableauCert.jpeg" alt="Certificate 5" class="certificate-img">
+            </a>
+            <p class="tags">#ML</p>
+          </div>
         </div>
-        <ul class="footer__links">
-          <li><a href="#services" class="footer__link">Experience</a></li>
-          <li><a href="#portfolio" class="footer__link">Projects</a></li>
-          <li><a href="#contact" class="footer__link">Contact</a></li>
-        </ul>
-        <div class="footer__socials">
-          <a href="mailto:john.doe@example.com" class="footer__social"><i class="uil uil-envelope-alt"></i></a>
-          <a href="https://github.com/JohnDoe" class="footer__social"><i class="uil uil-github-alt"></i></a>
+      </details>
+
+      <details>
+        <summary>Honors</summary>
+        <div class="grid-3">
+          <div class="project-card">
+            <h3>Samsung Excellence Award</h3>
+            <a href="media/Cert_Achi/Samsung Excellence Award.pdf.png" target="_blank">
+            <img src="media/Cert_Achi/Samsung Excellence Award.pdf.png" alt="Certificate 3" class="certificate-img">
+            </a>
+            <p class="tags">#AI #LLM #EdTech</p>
+          </div>
+          <div class="project-card">
+            <h3>Deloitte Outstanding Award</h3>
+            <a href="media/Cert_Achi/Outstanding Performance Award Certificate of Appreciation Lincoln.pdf.png" target="_blank">
+            <img src="media/Cert_Achi/Outstanding Performance Award Certificate of Appreciation Lincoln.pdf.png"
+              alt="Certificate 3" class="certificate-img">
+              </a>
+            <!-- <img src="media/Cert_Achi/Outstanding Performance Award Lincoln.pdf.png" alt="Certificate 3">   -->
+            <p class="tags">#AI #LLM #Interview</p>
+          </div>
+          <div class="project-card">
+            <h3>Deloitte Applause Award - QSR Client</h3>
+            <a href="media/Cert_Achi/Applause Award Dunkin.pdf.png" target="_blank">
+            <img src="media/Cert_Achi/Applause Award Dunkin.pdf.png" alt="Certificate 2" class="certificate-img">
+            </a>
+            <p class="tags">#AI #LLM #RAG</p>
+          </div>
+          <div class="project-card">
+            <h3>Deloitte Applause Award - Insurance Client</h3>
+            <a href="media/Cert_Achi/Applause Award AHQ.pdf.png" target="_blank">
+            <img src="media/Cert_Achi/Applause Award AHQ.pdf.png" alt="Certificate 1" class="certificate-img">
+            </a>
+            <p class="tags">#ML</p>
+          </div>
+          <div class="project-card">
+            <h3>Deloitte Applause Award - Hackathon</h3>
+            <a href="media/Cert_Achi/Applause Award-Hackathon.pdf.png" target="_blank">
+            <img src="media/Cert_Achi/Applause Award-Hackathon.pdf.png" alt="Certificate 3" class="certificate-img">
+            </a>
+            <p class="tags">#ML</p>
+          </div>
+          <div class="project-card">
+            <h3>APEX Training - Best Presentation</h3>
+            <a href="media/Cert_Achi/Apex_Special_mentions.png" target="_blank">
+            <img src="media/Cert_Achi/Apex_Special_mentions.png" alt="Certificate 3" class="certificate-img">
+            </a>
+            <p class="tags">#ML</p>
+          </div>
         </div>
-      </div>
+      </details>
+    </section>
+
+    <div class="reach-out">
+      Feel free to reach out via
+      <a href="mailto:hagupta@iu.edu">email</a>
+      or connect on
+      <a href="https://www.linkedin.com/in/harshg1347/" target="_blank">LinkedIn</a>.
     </div>
+
+  </main>
+  <footer>
+    © Harsh Gupta · Built with HTML & CSS · Last updated 2025
   </footer>
 
-  <!-- SCROLL TO TOP -->
-  <a href="#" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup__icon"></i></a>
+  <button id="backToTop" title="Back to Top">⬆ Top</button>
 
-  <!-- Scripts -->
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
-    var typed = new Typed(".auto-input", {
-      strings: ["an Electronics Engineer", "a Data Enthusiast", "a Problem Solver"],
-      typeSpeed: 100,
-      backSpeed: 100,
-      loop: true,
+    const topBtn = document.getElementById("backToTop");
+    window.onscroll = () => {
+      topBtn.style.display = (window.scrollY > 300) ? "block" : "none";
+    };
+    topBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+  <script>
+    const sidebar = document.querySelector('.sidebar');
+    const toggleBtn = document.getElementById('toggleSidebar');
+    toggleBtn.onclick = () => {
+      sidebar.classList.toggle('collapsed');
+      document.querySelector('main').classList.toggle('collapsed');
+    };
+  </script>
+  <script>
+    const carousels = {};
+
+    function initCarousel(id) {
+      const container = document.getElementById(id);
+      const slides = container.querySelectorAll("img");
+      let index = 0;
+
+      function showSlide(i) {
+        index = (i + slides.length) % slides.length;
+        container.style.transform = `translateX(-${index * 100}%)`;
+        carousels[id].index = index;
+      }
+
+      carousels[id] = {
+        container,
+        slides,
+        index,
+        showSlide,
+        next: () => showSlide(carousels[id].index + 1),
+        prev: () => showSlide(carousels[id].index - 1),
+      };
+
+      // Start auto-rotation
+      carousels[id].interval = setInterval(() => carousels[id].next(), 5000);
+    }
+
+    function nextSlide(id) {
+      if (carousels[id]) carousels[id].next();
+    }
+
+    function prevSlide(id) {
+      if (carousels[id]) carousels[id].prev();
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      initCarousel("CertCarousel");
+      initCarousel("awardsCarousel");
     });
   </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>AOS.init({ offset: 300, duration: 2000 });</script>
+
+
+
 </body>
+
 </html>
