@@ -347,3 +347,77 @@ footer {
 .github-link:hover {
   color: #0077b5;
 }
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  nav.sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+  nav.sidebar.collapsed {
+    height: auto;
+    width: 100%;
+    align-items: center;
+  }
+  nav.sidebar a span {
+    display: inline;
+  }
+  main {
+    margin-left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  footer {
+    margin-left: 0;
+    width: 100%;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+  .intro-text {
+    max-width: 100%;
+    align-items: center;
+  }
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+  .edu-block {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .edu-item {
+    max-width: 100%;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .certificate-img {
+    max-height: 200px;
+  }
+  .project-card img {
+    max-height: 180px;
+  }
+  .link-btns a {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+}
