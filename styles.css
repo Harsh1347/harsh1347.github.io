@@ -421,3 +421,58 @@ footer {
     margin-bottom: 0.5rem;
   }
 }
+/* --- Skills Section --- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 14px 14px 12px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+.skill-card h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  line-height: 1;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  transition: transform 0.12s ease, background 0.12s ease;
+  cursor: default;
+}
+
+.chip:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.16);
+}
+
