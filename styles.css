@@ -662,3 +662,78 @@ footer {
   background: rgba(255, 255, 255, 0.15);
 }
 
+/* ===============================
+   SKILLS GRID LAYOUT
+================================ */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+/* ===============================
+   EXPERIENCE (DETAILED)
+================================ */
+.exp-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.exp-item {
+  background: #fff;
+  border-left: 4px solid var(--primary);
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.exp-role {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0.2rem 0 0.5rem;
+}
+
+.exp-stack {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #999;
+  margin-left: 0.4rem;
+}
+
+.exp-bullets {
+  padding-left: 1.3rem;
+  margin: 0.3rem 0 0;
+  list-style: disc;
+}
+
+.exp-bullets li {
+  font-size: 0.88rem;
+  color: #555;
+  margin-bottom: 0.45rem;
+  line-height: 1.6;
+}
+
+.exp-subrole {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.subrole-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 0.35rem;
+}
+

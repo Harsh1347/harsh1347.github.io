@@ -8,8 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
-
-  </script>
 </head>
 
 <body>
@@ -47,7 +45,7 @@
         </p>
 
        <p class="availability">
-  Open to full-time roles in Data Science & Engineering, Analytics, Machine Learning, or AI starting May 2026.
+  Actively seeking full-time roles in Data Science & Engineering, Analytics, Machine Learning, or AI.
 </p>
 
         <div class="link-btns">
@@ -165,6 +163,7 @@
             <span class="chip primary">Python</span>
             <span class="chip primary">SQL</span>
             <span class="chip">R</span>
+            <span class="chip">TypeScript</span>
           </div>
         </div>
 
@@ -184,6 +183,7 @@
             <span class="chip">MCP</span>
             <span class="chip">Ollama</span>
             <span class="chip">Hugging Face</span>
+            <span class="chip">ElevenLabs</span>
           </div>
         </div>
 
@@ -200,6 +200,8 @@
             <span class="chip">Data Modeling (Fact / Dim)</span>
             <span class="chip">Data Validation & Logging</span>
             <span class="chip">Feature Engineering</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Snowflake</span>
           </div>
         </div>
 
@@ -218,6 +220,9 @@
             <span class="chip">Deep Learning</span>
             <span class="chip">TensorFlow</span>
             <span class="chip">PyTorch</span>
+            <span class="chip">A/B Testing</span>
+            <span class="chip">Hypothesis Testing</span>
+            <span class="chip">Statistical Inference</span>
           </div>
         </div>
 
@@ -226,7 +231,8 @@
           <h3><i class="fas fa-cloud"></i> Cloud, Storage & Analytics</h3>
           <div class="skill-chips">
             <span class="chip primary">AWS (S3, EC2, Redshift)</span>
-            <span class="chip">Azure (Azure ML)</span>
+            <span class="chip primary">Azure (Azure ML, ADF, AI Search)</span>
+            <span class="chip">GCP</span>
             <span class="chip">Postgres</span>
             <span class="chip">Amazon Aurora</span>
             <span class="chip">OracleDB</span>
@@ -297,35 +303,85 @@
 
     <section id="experience">
       <h2> <i class="fas fa-briefcase"></i> Experience</h2>
-      <div class="edu-block">
-        <div class="edu-item">
-          <div class="edu-institute">
-            <img src="media/Images/IU-logo.jpg" alt="IUB" class="edu-logo">
-            <strong>Indiana University Bloomington</strong>
+      <div class="exp-block">
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="edu-institute">
+              <img src="media/Images/IU-logo.jpg" alt="IUB" class="edu-logo">
+              <strong>Indiana University Bloomington</strong>
+            </div>
+            <span class="edu-year">Oct 2024 – Present</span>
           </div>
-          <p class="edu-detail">Part-Time ML Engineer <span class="edu-year">(Oct 2024 – Present)</span></p>
+          <p class="exp-role">Part-Time AI & Data Engineer <span class="exp-stack">Azure · Python · SQL · Tableau · LLM</span></p>
+          <ul class="exp-bullets">
+            <li>Developed time-series forecasting models for dining footfall prediction, reducing average forecast error from ~2,000 to <strong>±500 swipes/day</strong>.</li>
+            <li>Built a Data Ingestion and Feature Engineering pipeline using Azure Data Factory, achieving a <strong>21% increase in prediction accuracy</strong>.</li>
+            <li>Boosted pipeline throughput <strong>6×</strong> using distributed Azure compute, achieving a residual error of 5%.</li>
+            <li>Enabled ~<strong>$2K–$3K daily operational cost optimization</strong> through improved food preparation and labor scheduling decisions.</li>
+          </ul>
         </div>
-        <div class="edu-item">
-          <div class="edu-institute">
-            <img src="media/Images/IUB-AUX-logo.jpeg" alt="IUB" class="edu-logo">
-            <strong>Indiana University Campus Auxiliaries</strong>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="edu-institute">
+              <img src="media/Images/IUB-AUX-logo.jpeg" alt="IUB Campus Aux" class="edu-logo">
+              <strong>Indiana University Campus Auxiliaries</strong>
+            </div>
+            <span class="edu-year">Jun 2025 – Aug 2025</span>
           </div>
-          <p class="edu-detail">AI Engineer Intern <span class="edu-year">(Jun 2025 – Aug 2025)</span></p>
+          <p class="exp-role">AI & Data Engineer Intern <span class="exp-stack">Azure AI Search · Azure ML · Python · FastAPI · LangChain</span></p>
+          <ul class="exp-bullets">
+            <li>Designed and built a scalable document ingestion and indexing pipeline to onboard <strong>12,000+ Confluence pages</strong> into Azure AI Search, automating extraction, chunking, embedding, and index updates.</li>
+            <li>Enhanced RAG response accuracy from <strong>76% to 93%</strong> by implementing metadata filtering & small-to-large context expansion, improving document retrieval and user confidence.</li>
+            <li>Deployed a knowledge retrieval system enabling <strong>250+ staff members</strong> to reduce document lookup time from 20–25 minutes to <strong>under 10 minutes</strong>.</li>
+          </ul>
         </div>
-        <div class="edu-item">
-          <div class="edu-institute">
-            <img src="media/Images/Deloitte-logo.jpeg" alt="Deloitte" class="edu-logo">
-            <strong>Deloitte</strong>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="edu-institute">
+              <img src="media/Images/Deloitte-logo.jpeg" alt="Deloitte" class="edu-logo">
+              <strong>Deloitte – Strategy & Analytics</strong>
+            </div>
+            <span class="edu-year">Sep 2021 – Jul 2024</span>
           </div>
-          <p class="edu-detail">Data Engineer & Scientist <span class="edu-year">(Sep 2021 – Jul 2024)</span></p>
-        </div>
-        <div class="edu-item">
-          <div class="edu-institute">
-            <img src="media/Images/Samsung-logo.png" alt="Samsung" class="edu-logo">
-            <strong>Samsung Research</strong>
+
+          <div class="exp-subrole">
+            <p class="subrole-title">Data Engineer – Consultant – FSI Domain <span class="exp-stack">AWS Glue · PySpark · OracleDB · Postgres</span> <span class="edu-year">(Jun 2023 – Jul 2024)</span></p>
+            <ul class="exp-bullets">
+              <li>Built production batch ETL pipelines in AWS Glue & PySpark to ingest a new XML-based insurance source system, processing <strong>12–15M records/day</strong> into an enterprise data warehouse.</li>
+              <li>Designed a multi-stage ingestion architecture (Landing → Staging → Master → ODS), integrating with Informatica workflows and downstream analytics.</li>
+              <li>Orchestrated pipelines using AWS Glue Workflows with EventBridge scheduling and SNS alerting, <strong>reducing issue resolution time by 25–30%</strong>.</li>
+              <li>Developed <strong>CodETL</strong>, a rule-based code generation accelerator that cut ETL pipeline development time by <strong>40%</strong>.</li>
+            </ul>
           </div>
-          <p class="edu-detail">Computer Vision Research Intern <span class="edu-year">(Jan 2021 – Jun 2021)</span></p>
+
+          <div class="exp-subrole">
+            <p class="subrole-title">Data Scientist – Consultant – Customer Strategy & Pricing <span class="exp-stack">Python · R · ML · AWS S3 · Tableau</span> <span class="edu-year">(Sep 2021 – May 2023)</span></p>
+            <ul class="exp-bullets">
+              <li>Modeled demand elasticity across <strong>5,000+ stores</strong> using linear mixed-effects regression, generating a <strong>$1M–$3M profit increase</strong> while limiting customer churn to 1%.</li>
+              <li>Delivered executive-ready Tableau dashboards and scenario analysis to inform pricing roadmaps and influence leadership decisions.</li>
+              <li>Streamlined the Pricing-as-a-Service data pipeline, <strong>boosting efficiency by 30%</strong> and supporting client acquisition through success story presentations.</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="edu-institute">
+              <img src="media/Images/Samsung-logo.png" alt="Samsung" class="edu-logo">
+              <strong>Samsung Research Institute (PRISM Team)</strong>
+            </div>
+            <span class="edu-year">Jan 2021 – Jun 2021</span>
+          </div>
+          <p class="exp-role">Computer Vision Research Intern <span class="exp-stack">Python · NumPy · OpenCV</span></p>
+          <ul class="exp-bullets">
+            <li>Developed a CV algorithm to enhance low-light astrophotography captured on mobile phones, significantly improving the signal-to-noise ratio using advanced image processing techniques.</li>
+            <li>Co-authored an IEEE research paper; received <strong>Samsung Excellence Award</strong> ($300 reward) for outstanding contributions to the PRISM internship program.</li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
@@ -410,6 +466,17 @@
             <a href="https://github.com/Harsh1347/Flight_Fare_Prediction" target="_blank" class="github-link">
               <i class="fab fa-github"></i> View on GitHub
             </a>
+          </div>
+          <div class="project-card">
+            <h3>SprintlessAI</h3>
+            <p>Generates Agile user stories from a requirements document + codebase context using RAG. Outputs structured stories and supports optional upload to Jira or GitHub.</p>
+            <a href="https://github.com/Harsh1347/SprintlessAI" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Semantic Intent Router</h3>
+            <p>Multi-agent routing pipeline that classifies user intent, retrieves the relevant domain via FAISS vector search, and dispatches to the correct agent — all using open-source embeddings.</p>
           </div>
         </div>
       </details>
@@ -529,9 +596,10 @@
           <div class="project-card">
             <h3>Covid Vaccine Appointment Bot</h3>
             <p>Alerts for vaccine slots by scraping using zip codes.</p>
-            <!-- <a href="https://github.com/Harsh1347/TA-Lite" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a> -->
+          </div>
+          <div class="project-card">
+            <h3>University Assistant Chatbot</h3>
+            <p>NLP-powered FAQ chatbot for university queries. Built a custom dataset and trained multiple NLP models for intent classification and response generation. Served clients across 5+ countries.</p>
           </div>
         </div>
       </details>
@@ -642,7 +710,7 @@
 
   </main>
   <footer>
-    © Harsh Gupta · Built with HTML & CSS · Last updated 2025
+    © Harsh Gupta · Built with HTML & CSS · Last updated 2026
   </footer>
 
   <button id="backToTop" title="Back to Top">⬆ Top</button>
