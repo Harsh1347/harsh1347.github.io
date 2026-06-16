@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360">
+  <defs>
+    <radialGradient id="bg" cx="40%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0d0d1e"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="0.9" fill="rgba(0,212,255,0.07)"/>
+    </pattern>
+    <clipPath id="lensClip">
+      <circle cx="300" cy="175" r="110"/>
+    </clipPath>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="360" fill="url(#bg)"/>
+  <rect width="800" height="360" fill="url(#dots)"/>
+
+  <!-- Data table in background -->
+  <g opacity="0.25">
+    <rect x="60" y="60" width="480" height="240" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <!-- Header row -->
+    <rect x="60" y="60" width="480" height="32" rx="8" fill="rgba(0,212,255,0.06)"/>
+    <text x="100" y="81" fill="rgba(0,212,255,0.7)" font-family="monospace" font-size="10" font-weight="600">policy_id</text>
+    <text x="200" y="81" fill="rgba(0,212,255,0.7)" font-family="monospace" font-size="10" font-weight="600">premium</text>
+    <text x="310" y="81" fill="rgba(0,212,255,0.7)" font-family="monospace" font-size="10" font-weight="600">risk_score</text>
+    <text x="420" y="81" fill="rgba(0,212,255,0.7)" font-family="monospace" font-size="10" font-weight="600">status</text>
+    <!-- Rows -->
+    <line x1="60" y1="92" x2="540" y2="92" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="100" y="110" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">POL-00281</text>
+    <text x="200" y="110" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">$4,820</text>
+    <text x="310" y="110" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">0.72</text>
+    <text x="420" y="110" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">ACTIVE</text>
+    <line x1="60" y1="120" x2="540" y2="120" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="100" y="138" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">POL-00282</text>
+    <text x="200" y="138" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">$2,100</text>
+    <text x="310" y="138" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">0.41</text>
+    <text x="420" y="138" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">ACTIVE</text>
+    <line x1="60" y1="148" x2="540" y2="148" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="100" y="166" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">POL-00283</text>
+    <text x="200" y="166" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">$7,360</text>
+    <text x="310" y="166" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">0.89</text>
+    <text x="420" y="166" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">REVIEW</text>
+    <line x1="60" y1="176" x2="540" y2="176" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="100" y="194" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">POL-00284</text>
+    <text x="200" y="194" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">$3,540</text>
+    <text x="310" y="194" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">0.55</text>
+    <text x="420" y="194" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">ACTIVE</text>
+    <line x1="60" y1="204" x2="540" y2="204" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="100" y="222" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">POL-00285</text>
+    <text x="200" y="222" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">$9,200</text>
+    <text x="310" y="222" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">0.94</text>
+    <text x="420" y="222" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="9">FLAGGED</text>
+  </g>
+
+  <!-- Highlighted row (found by search) -->
+  <rect x="60" y="203" width="480" height="28" rx="0" fill="rgba(0,212,255,0.08)" stroke="none"/>
+  <rect x="60" y="203" width="3" height="28" fill="#00d4ff"/>
+
+  <!-- Magnifying glass -->
+  <circle cx="300" cy="175" r="112" fill="rgba(0,0,0,0.55)" stroke="rgba(0,212,255,0.5)" stroke-width="3"/>
+  <circle cx="300" cy="175" r="112" fill="rgba(0,212,255,0.04)" clip-path="url(#lensClip)"/>
+  <!-- Glass shine -->
+  <path d="M230 120 Q245 108 265 112" stroke="rgba(255,255,255,0.2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Handle -->
+  <line x1="385" y1="258" x2="440" y2="315" stroke="rgba(0,212,255,0.6)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="385" y1="258" x2="440" y2="315" stroke="rgba(0,212,255,0.2)" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Scan line inside lens -->
+  <line x1="190" y1="175" x2="410" y2="175" stroke="rgba(0,212,255,0.5)" stroke-width="1.5" stroke-dasharray="6,4" clip-path="url(#lensClip)"/>
+
+  <!-- NL Query box -->
+  <rect x="490" y="80" width="260" height="44" rx="8" fill="rgba(0,212,255,0.07)" stroke="rgba(0,212,255,0.3)" stroke-width="1.5"/>
+  <text x="510" y="97" fill="rgba(0,212,255,0.5)" font-family="monospace" font-size="9">QUERY</text>
+  <text x="510" y="113" fill="rgba(255,255,255,0.7)" font-family="monospace" font-size="10">"Show high risk policies..."</text>
+
+  <!-- Answer box -->
+  <rect x="490" y="144" width="260" height="120" rx="8" fill="rgba(124,58,237,0.07)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5"/>
+  <text x="510" y="162" fill="rgba(167,139,250,0.6)" font-family="monospace" font-size="9">RESULT · 2 records</text>
+  <line x1="510" y1="170" x2="730" y2="170" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="510" y="186" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9">POL-00283 · risk: 0.89 · REVIEW</text>
+  <text x="510" y="202" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9">POL-00285 · risk: 0.94 · FLAGGED</text>
+  <line x1="510" y1="214" x2="730" y2="214" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="510" y="230" fill="rgba(167,139,250,0.5)" font-family="monospace" font-size="8">Based on risk_score threshold</text>
+  <text x="510" y="244" fill="rgba(167,139,250,0.5)" font-family="monospace" font-size="8">and status classification...</text>
+
+  <text x="400" y="340" text-anchor="middle" fill="rgba(0,212,255,0.3)" font-family="monospace" font-size="10" letter-spacing="2">LLM-POWERED RAG · NATURAL LANGUAGE → DATA</text>
+</svg>

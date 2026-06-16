@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0e0e1a"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="0.9" fill="rgba(0,212,255,0.06)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="360" fill="url(#bg)"/>
+  <rect width="800" height="360" fill="url(#dots)"/>
+
+  <!-- Step labels -->
+  <text x="140" y="45" text-anchor="middle" fill="rgba(0,212,255,0.4)" font-family="monospace" font-size="9" letter-spacing="1">REQUIREMENTS</text>
+  <text x="400" y="45" text-anchor="middle" fill="rgba(124,58,237,0.5)" font-family="monospace" font-size="9" letter-spacing="1">AI PROCESSING</text>
+  <text x="660" y="45" text-anchor="middle" fill="rgba(0,212,255,0.4)" font-family="monospace" font-size="9" letter-spacing="1">USER STORIES</text>
+
+  <!-- Document / Requirements -->
+  <rect x="60" y="60" width="160" height="220" rx="10" fill="rgba(0,212,255,0.05)" stroke="rgba(0,212,255,0.25)" stroke-width="1.5"/>
+  <rect x="60" y="60" width="160" height="32" rx="10" fill="rgba(0,212,255,0.1)"/>
+  <rect x="60" y="76" width="160" height="16" fill="rgba(0,212,255,0.1)"/>
+  <text x="140" y="80" text-anchor="middle" fill="rgba(0,212,255,0.7)" font-family="monospace" font-size="10" font-weight="600">requirements.docx</text>
+  <!-- Lines of text -->
+  <rect x="78" y="106" width="120" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+  <rect x="78" y="120" width="100" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <rect x="78" y="134" width="115" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+  <rect x="78" y="148" width="85"  height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <rect x="78" y="162" width="110" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+  <rect x="78" y="176" width="95"  height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <rect x="78" y="190" width="120" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+  <rect x="78" y="204" width="75"  height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <rect x="78" y="218" width="105" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+  <rect x="78" y="232" width="90"  height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <!-- Fold corner -->
+  <path d="M196 60 L220 60 L220 84 Z" fill="rgba(0,212,255,0.15)"/>
+  <path d="M196 60 L220 84 L196 84 Z" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
+
+  <!-- Arrow right -->
+  <line x1="228" y1="170" x2="288" y2="170" stroke="rgba(0,212,255,0.4)" stroke-width="2" stroke-dasharray="5,4"/>
+  <polygon points="288,164 300,170 288,176" fill="rgba(0,212,255,0.5)"/>
+
+  <!-- AI Processor -->
+  <rect x="308" y="110" width="184" height="120" rx="12" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.4)" stroke-width="2"/>
+  <circle cx="400" cy="145" r="24" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.4)" stroke-width="1.5"/>
+  <!-- AI sparkle -->
+  <text x="400" y="151" text-anchor="middle" fill="#a78bfa" font-family="monospace" font-size="18" font-weight="700">AI</text>
+  <text x="400" y="190" text-anchor="middle" fill="rgba(167,139,250,0.6)" font-family="monospace" font-size="9">RAG + Code Context</text>
+  <text x="400" y="204" text-anchor="middle" fill="rgba(167,139,250,0.4)" font-family="monospace" font-size="8">Agile Story Generator</text>
+  <!-- Decorative dots -->
+  <circle cx="330" cy="125" r="3" fill="rgba(124,58,237,0.5)"/>
+  <circle cx="470" cy="125" r="3" fill="rgba(124,58,237,0.5)"/>
+  <circle cx="330" cy="215" r="3" fill="rgba(124,58,237,0.5)"/>
+  <circle cx="470" cy="215" r="3" fill="rgba(124,58,237,0.5)"/>
+
+  <!-- Arrow right -->
+  <line x1="500" y1="170" x2="560" y2="170" stroke="rgba(0,212,255,0.4)" stroke-width="2" stroke-dasharray="5,4"/>
+  <polygon points="560,164 572,170 560,176" fill="rgba(0,212,255,0.5)"/>
+
+  <!-- Story cards (Kanban) -->
+  <!-- Card 1 -->
+  <rect x="578" y="68" width="164" height="72" rx="8" fill="rgba(0,212,255,0.06)" stroke="rgba(0,212,255,0.3)" stroke-width="1.5"/>
+  <rect x="578" y="68" width="164" height="22" rx="8" fill="rgba(0,212,255,0.1)"/>
+  <rect x="578" y="76" width="164" height="14" fill="rgba(0,212,255,0.1)"/>
+  <text x="596" y="83" fill="rgba(0,212,255,0.7)" font-family="monospace" font-size="8" font-weight="600">US-001 · As a user...</text>
+  <rect x="592" y="100" width="120" height="5" rx="2" fill="rgba(255,255,255,0.1)"/>
+  <rect x="592" y="112" width="100" height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="592" y="124" width="90"  height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <!-- Tag -->
+  <rect x="688" y="118" width="42" height="14" rx="7" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.4)" stroke-width="1"/>
+  <text x="709" y="129" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="8">Done</text>
+
+  <!-- Card 2 -->
+  <rect x="578" y="152" width="164" height="72" rx="8" fill="rgba(0,212,255,0.06)" stroke="rgba(0,212,255,0.3)" stroke-width="1.5"/>
+  <rect x="578" y="152" width="164" height="22" rx="8" fill="rgba(0,212,255,0.1)"/>
+  <rect x="578" y="160" width="164" height="14" fill="rgba(0,212,255,0.1)"/>
+  <text x="596" y="167" fill="rgba(0,212,255,0.7)" font-family="monospace" font-size="8" font-weight="600">US-002 · As an admin...</text>
+  <rect x="592" y="184" width="110" height="5" rx="2" fill="rgba(255,255,255,0.1)"/>
+  <rect x="592" y="196" width="95"  height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="592" y="208" width="85"  height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="688" y="202" width="42" height="14" rx="7" fill="rgba(234,179,8,0.15)" stroke="rgba(234,179,8,0.4)" stroke-width="1"/>
+  <text x="709" y="213" text-anchor="middle" fill="#eab308" font-family="monospace" font-size="8">TODO</text>
+
+  <!-- Card 3 -->
+  <rect x="578" y="236" width="164" height="54" rx="8" fill="rgba(124,58,237,0.06)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5"/>
+  <text x="596" y="256" fill="rgba(167,139,250,0.7)" font-family="monospace" font-size="8" font-weight="600">US-003 · As a manager...</text>
+  <rect x="592" y="264" width="105" height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
+  <rect x="592" y="276" width="80"  height="5" rx="2" fill="rgba(255,255,255,0.05)"/>
+
+  <text x="400" y="340" text-anchor="middle" fill="rgba(0,212,255,0.3)" font-family="monospace" font-size="10" letter-spacing="2">RAG · CODEBASE CONTEXT · JIRA / GITHUB UPLOAD</text>
+</svg>

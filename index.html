@@ -1,790 +1,870 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Harsh Gupta | Data & AI Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <nav class="sidebar">
-    <button id="toggleSidebar" title="Toggle Menu">
+
+  <!-- ═══════════════ SIDEBAR ═══════════════ -->
+  <nav class="sidebar" id="sidebar">
+    <button class="sidebar-toggle" id="toggleSidebar" title="Toggle menu">
       <i class="fas fa-bars"></i>
     </button>
-    <a href="#intro"><i class="fas fa-user"></i> <span>About Me</span></a>
-    <a href="#what-i-do"><i class="fas fa-diagram-project"></i> <span>What I Do</span></a>
-    <a href="#skills"><i class="fas fa-tools"></i> <span>Skills</span></a>
-    <a href="#education"><i class="fas fa-university"></i> <span>Education</span></a>
-    <a href="#experience"><i class="fas fa-briefcase"></i> <span>Experience</span></a>
-    <a href="#projects"><i class="fas fa-lightbulb"></i> <span>Projects & Publications</span></a>
-    <a href="#honors"><i class="fas fa-certificate"></i> <span>Certification & Honors</span></a>
-    <!-- <a href="#contact"><i class="fas fa-envelope"></i> <span>Contact</span></a> -->
+    <div class="sidebar-brand">
+      <span class="brand-initials">HG</span>
+      <span class="brand-name">Harsh Gupta</span>
+    </div>
+    <div class="sidebar-links">
+      <a href="#intro"      class="nav-link"><i class="fas fa-user"></i>          <span>About</span></a>
+      <a href="#impact"     class="nav-link"><i class="fas fa-chart-line"></i>    <span>Impact</span></a>
+      <a href="#what-i-do"  class="nav-link"><i class="fas fa-layer-group"></i>   <span>What I Build</span></a>
+      <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i>     <span>Experience</span></a>
+      <a href="#education"  class="nav-link"><i class="fas fa-graduation-cap"></i><span>Education</span></a>
+      <a href="#projects"   class="nav-link"><i class="fas fa-lightbulb"></i>     <span>Projects</span></a>
+      <a href="#skills"     class="nav-link"><i class="fas fa-tools"></i>         <span>Skills</span></a>
+      <a href="#honors"     class="nav-link"><i class="fas fa-award"></i>         <span>Honors</span></a>
+    </div>
+    <div class="sidebar-socials">
+      <a href="https://www.linkedin.com/in/harshg1347/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Harsh1347" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:harsh.gupta34@outlook.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   </nav>
 
-  <main>
-    <header class="intro-container" id="intro">
-      <div class="intro-img">
-        <img class="profile-pic" src="media/Images/HarshGupta.jpg" alt="Harsh Gupta Photo">
-      </div>
-      <div class="intro-text">
-        <h1>Harsh Gupta</h1>
+  <!-- ═══════════════ MAIN ═══════════════ -->
+  <main id="main">
 
-        <h2 class="hero-title">Data & AI Engineer @ Indiana University Bloomington</h2>
-
-        <p class="hero-summary">
-          Building scalable data systems and applied AI products.
-        </p>
-
-        <p class="hero-sub">
-          3+ years of experience across Data & AI engineering, data analysis and ML.<br>
-          Ex-Deloitte · Ex-Samsung Research Intern
-        </p>
-
-       <p class="availability">
-  Actively seeking full-time roles in Data Science & Engineering, Analytics, Machine Learning, or AI.
-</p>
-
-        <div class="link-btns">
-          <a href="https://www.linkedin.com/in/harshg1347/" target="_blank">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <a href="https://github.com/Harsh1347" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="https://scholar.google.com/citations?user=7bmWYigAAAAJ&hl=en" target="_blank">
-            <i class="fas fa-graduation-cap"></i> Google Scholar
-          </a>
-          <a href="mailto:hagupta@iu.edu">
-            <i class="fas fa-envelope"></i> hagupta@iu.edu
-          </a>
-        </div>
-        <a class="resume-btn" href="media/Resume/HarshGuptaResume.pdf" download>
-          <i class="fas fa-file-download"></i> Download Resume
-        </a>
-      </div>
-    </header>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm Harsh Gupta, with over <strong>3 years of experience</strong> in <strong>AI and Data roles</strong> across
-        diverse industries including <strong>education</strong>, <strong>research</strong>, <strong>retail</strong>, and
-        <strong>insurance</strong>. I’ve contributed to projects at <strong>Deloitte</strong> and <strong>Samsung
-          Research</strong>, working on everything from <strong>data engineering</strong> and <strong>analysis</strong>
-        to <strong>computer vision</strong> and <strong>intelligent automation</strong>.<br><br>
-
-        Currently, I'm pursuing a <strong>Master’s in Data Science</strong> at <strong>Indiana University
-          Bloomington</strong> while working part-time as an <strong>Data & AI Engineer</strong>. I completed my undergraduate
-        studies at <strong>Manipal Institute of Technology</strong> with a major in <strong>Electronics & Communication
-          Engineering</strong> and a <strong>Minor in Data Science.</strong><br><br>
-
-        What drives me is <strong>building systems that don’t just work, but learn, adapt, and scale</strong>. I love
-        <strong>automating repetitive tasks</strong>, <strong>designing LLM-powered assistants</strong>, and
-        <strong>creating tools that support better decision-making</strong>. Whether it’s <strong>optimizing retail
-          pricing</strong>, <strong>enhancing educational platforms</strong>, or <strong>accelerating developer
-          workflows</strong>, I enjoy applying AI to create meaningful impact.
-        <br>
-        <strong><a href="mailto:hagupta@iu.edu">Let’s connect</a> — I’d love to hear what you’re working on!</strong>
-
-      </p>
-
-    </section>
-    <section id="what-i-do">
-      <h2>What I Do: The Full Stack Flow</h2>
-      <p class="flow-subtitle">
-        From ingestion to intelligence : building systems end to end.
-
-      </p>
-
-      <div class="flow-grid">
-
-        <div class="flow-card">
-          <span class="flow-layer"><i class="fas fa-database"></i> Layer 0 </span>
-          <h3>Ingestion & ETL</h3>
-          <p>
-            Designing reliable pipelines to ingest, clean, and unify data from
-            multiple structured and unstructured sources.
-          </p>
-        </div>
-
-        <div class="flow-card">
-          <span class="flow-layer"><i class="fas fa-sliders-h"></i> Layer 1 </span>
-          <h3>Processing & Analytics</h3>
-          <p>
-            Transforming raw data into meaningful features, metrics, and insights
-            that drive downstream modeling.
-          </p>
-        </div>
-
-        <div class="flow-card">
-          <span class="flow-layer"><i class="fas fa-brain"></i> Layer 2 </span>
-          <h3>Modeling & Intelligence</h3>
-          <p>
-            Training machine learning models to predict, classify, and forecast
-            real-world outcomes.
-          </p>
-        </div>
-
-        <div class="flow-card">
-          <span class="flow-layer"><i class="fas fa-robot"></i> Layer 3 </span>
-          <h3>GenAI & Agentic Systems</h3>
-          <p>
-            Building LLM-powered applications, RAG pipelines, and agents that reason,
-            act, and automate workflows.
-          </p>
-        </div>
-      </div>
-      </p>
-    </section>
-
-    <section id="skills">
-      <h2><i class="fas fa-tools"></i> Skills</h2>
-
-      <!-- <p class="skills-subtitle">
-        Focused on building scalable data platforms and production-ready AI systems.
-      </p>
-
-      Core Strengths -->
-      <!-- <div class="core-skills">
-        <span>LLM Systems</span>
-        <span>Data Engineering</span>
-        <span>Cloud & MLOps</span>
-      </div> --> 
-
-      <div class="skills-grid">
-
-        <!-- Programming Foundations -->
-        <div class="skill-card">
-          <h3><i class="fas fa-code"></i> Programming Foundations</h3>
-          <div class="skill-chips">
-            <span class="chip primary">Python</span>
-            <span class="chip primary">SQL</span>
-            <span class="chip">R</span>
-            <span class="chip">TypeScript</span>
-          </div>
-        </div>
-
-        <!-- LLM & AI Systems -->
-        <div class="skill-card">
-          <h3><i class="fas fa-robot"></i> LLM & AI Systems</h3>
-          <div class="skill-chips">
-            <span class="chip primary">RAG</span>
-            <span class="chip primary">Hybrid Search (BM25 + Vector)</span>
-            <span class="chip primary">Embeddings</span>
-            <span class="chip">Cross-Encoder Reranking</span>
-            <span class="chip">Context-Aware Chunking</span>
-            <span class="chip">LangChain</span>
-            <span class="chip">LangGraph</span>
-            <span class="chip">Semantic Kernel</span>
-            <span class="chip">Azure AI Search</span>
-            <span class="chip">MCP</span>
-            <span class="chip">Ollama</span>
-            <span class="chip">Hugging Face</span>
-            <span class="chip">ElevenLabs</span>
-          </div>
-        </div>
-
-        <!-- Data Engineering & Platforms -->
-        <div class="skill-card">
-          <h3><i class="fas fa-database"></i> Data Engineering & Platforms</h3>
-          <div class="skill-chips">
-            <span class="chip primary">Apache Spark</span>
-            <span class="chip primary">PySpark</span>
-            <span class="chip primary">ETL / ELT Pipelines</span>
-            <span class="chip">Apache Airflow</span>
-            <span class="chip">Azure Data Factory</span>
-            <span class="chip">AWS Glue</span>
-            <span class="chip">Data Modeling (Fact / Dim)</span>
-            <span class="chip">Data Validation & Logging</span>
-            <span class="chip">Feature Engineering</span>
-            <span class="chip">MongoDB</span>
-            <span class="chip">Snowflake</span>
-          </div>
-        </div>
-
-        <!-- Machine Learning & MLOps -->
-        <div class="skill-card">
-          <h3><i class="fas fa-brain"></i> Machine Learning & MLOps</h3>
-          <div class="skill-chips">
-            <span class="chip primary">Model Deployment</span>
-            <span class="chip primary">Docker</span>
-            <span class="chip">CI / CD</span>
-            <span class="chip">Regression</span>
-            <span class="chip">Clustering</span>
-            <span class="chip">Time Series Forecasting</span>
-            <span class="chip">Recommender Systems</span>
-            <span class="chip">Computer Vision</span>
-            <span class="chip">Deep Learning</span>
-            <span class="chip">TensorFlow</span>
-            <span class="chip">PyTorch</span>
-            <span class="chip">A/B Testing</span>
-            <span class="chip">Hypothesis Testing</span>
-            <span class="chip">Statistical Inference</span>
-          </div>
-        </div>
-
-        <!-- Cloud, Storage & Analytics -->
-        <div class="skill-card">
-          <h3><i class="fas fa-cloud"></i> Cloud, Storage & Analytics</h3>
-          <div class="skill-chips">
-            <span class="chip primary">AWS (S3, EC2, Redshift)</span>
-            <span class="chip primary">Azure (Azure ML, ADF, AI Search)</span>
-            <span class="chip">GCP</span>
-            <span class="chip">Postgres</span>
-            <span class="chip">Amazon Aurora</span>
-            <span class="chip">OracleDB</span>
-            <span class="chip">Hadoop</span>
-            <span class="chip">Tableau</span>
-            <span class="chip">Power BI</span>
-          </div>
-        </div>
-
-        <!-- Backend & APIs -->
-        <div class="skill-card">
-          <h3><i class="fas fa-server"></i> Backend & APIs</h3>
-          <div class="skill-chips">
-            <span class="chip primary">FastAPI</span>
-            <span class="chip">Flask</span>
-            <span class="chip">REST APIs</span>
-            <span class="chip">Git / GitHub</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="education">
-      <h2><i class="fas fa-university"></i> Education</h2>
-      <div class="edu-block">
-        <div class="edu-item">
-          <div class="edu-institute">
-            <img src="media/Images/IU-logo.jpg" alt="IUB" class="edu-logo">
-            <strong>Indiana University Bloomington, USA</strong>
-          </div>
-          <p class="edu-detail">MS in Data Science <span class="edu-year">(Aug 2024 – May 2026)</span></p>
-          <p class="edu-detail">GPA: 4/4</p>
-          <!-- <button class="edu-toggle" onclick="toggleEdu(this)">
-            Learn more
-          </button> -->
-
-          <!-- <div class="edu-more">
-            <ul>
-              <li><strong>Coursework:</strong> Machine Learning, Data Mining, Applied Statistics, Big Data Systems</li>
-              <li><strong>Focus:</strong> LLM systems, scalable data pipelines, applied ML</li>
-              <li><strong>Projects:</strong> TA-Lite (LLM-powered teaching assistant), Retail Pricing Optimization</li>
-            </ul>
-          </div> -->
-
-        </div>
-        <div class="edu-item">
-          <div class="edu-institute">
-            <img src="media/Images/Manipal-logo.jpeg" alt="Manipal" class="edu-logo">
-            <strong>Manipal Institute of Technology, India</strong>
-          </div>
-          <p class="edu-detail">B.Tech in Electronics & Communication Engineering </p>
-          <p class="edu-detail">Minor in Data Science <span class="edu-year">(Jul 2017 – May 2021)</span></p>
-          <!-- <button class="edu-toggle" onclick="toggleEdu(this)">
-            Learn more
-          </button> -->
-
-          <!-- <div class="edu-more">
-            <ul>
-              <li><strong>Coursework:</strong> Machine Learning, Data Mining, Applied Statistics, Big Data Systems</li>
-              <li><strong>Focus:</strong> LLM systems, scalable data pipelines, applied ML</li>
-              <li><strong>Projects:</strong> TA-Lite (LLM-powered teaching assistant), Retail Pricing Optimization</li>
-            </ul>
-          </div> -->
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <h2> <i class="fas fa-briefcase"></i> Experience</h2>
-      <div class="exp-block">
-
-        <div class="exp-item">
-          <div class="exp-header">
-            <div class="edu-institute">
-              <img src="media/Images/IU-logo.jpg" alt="IUB" class="edu-logo">
-              <strong>Indiana University Bloomington</strong>
+    <!-- ── HERO ── -->
+    <section id="intro" class="section hero-section">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <div class="hero-left">
+          <div class="photo-ring">
+            <div class="photo-inner">
+              <img src="media/Images/HarshGupta.jpg" alt="Harsh Gupta" class="profile-photo">
             </div>
-            <span class="edu-year">Oct 2024 – Present</span>
           </div>
-          <p class="exp-role">Part-Time AI & Data Engineer <span class="exp-stack">Azure · Python · SQL · Tableau · LLM</span></p>
-          <ul class="exp-bullets">
-            <li>Developed time-series forecasting models for dining footfall prediction, reducing average forecast error from ~2,000 to <strong>±500 swipes/day</strong>.</li>
-            <li>Built a Data Ingestion and Feature Engineering pipeline using Azure Data Factory, achieving a <strong>21% increase in prediction accuracy</strong>.</li>
-            <li>Boosted pipeline throughput <strong>6×</strong> using distributed Azure compute, achieving a residual error of 5%.</li>
-            <li>Enabled ~<strong>$2K–$3K daily operational cost optimization</strong> through improved food preparation and labor scheduling decisions.</li>
-          </ul>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-header">
-            <div class="edu-institute">
-              <img src="media/Images/IUB-AUX-logo.jpeg" alt="IUB Campus Aux" class="edu-logo">
-              <strong>Indiana University Campus Auxiliaries</strong>
-            </div>
-            <span class="edu-year">Jun 2025 – Aug 2025</span>
-          </div>
-          <p class="exp-role">AI & Data Engineer Intern <span class="exp-stack">Azure AI Search · Azure ML · Python · FastAPI · LangChain</span></p>
-          <ul class="exp-bullets">
-            <li>Designed and built a scalable document ingestion and indexing pipeline to onboard <strong>12,000+ Confluence pages</strong> into Azure AI Search, automating extraction, chunking, embedding, and index updates.</li>
-            <li>Enhanced RAG response accuracy from <strong>76% to 93%</strong> by implementing metadata filtering & small-to-large context expansion, improving document retrieval and user confidence.</li>
-            <li>Deployed a knowledge retrieval system enabling <strong>250+ staff members</strong> to reduce document lookup time from 20–25 minutes to <strong>under 10 minutes</strong>.</li>
-          </ul>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-header">
-            <div class="edu-institute">
-              <img src="media/Images/Deloitte-logo.jpeg" alt="Deloitte" class="edu-logo">
-              <strong>Deloitte – Strategy & Analytics</strong>
-            </div>
-            <span class="edu-year">Sep 2021 – Jul 2024</span>
-          </div>
-
-          <div class="exp-subrole">
-            <p class="subrole-title">Data Engineer – Consultant – FSI Domain <span class="exp-stack">AWS Glue · PySpark · OracleDB · Postgres</span> <span class="edu-year">(Jun 2023 – Jul 2024)</span></p>
-            <ul class="exp-bullets">
-              <li>Built production batch ETL pipelines in AWS Glue & PySpark to ingest a new XML-based insurance source system, processing <strong>12–15M records/day</strong> into an enterprise data warehouse.</li>
-              <li>Designed a multi-stage ingestion architecture (Landing → Staging → Master → ODS), integrating with Informatica workflows and downstream analytics.</li>
-              <li>Orchestrated pipelines using AWS Glue Workflows with EventBridge scheduling and SNS alerting, <strong>reducing issue resolution time by 25–30%</strong>.</li>
-              <li>Developed <strong>CodETL</strong>, a rule-based code generation accelerator that cut ETL pipeline development time by <strong>40%</strong>.</li>
-            </ul>
-          </div>
-
-          <div class="exp-subrole">
-            <p class="subrole-title">Data Scientist – Consultant – Customer Strategy & Pricing <span class="exp-stack">Python · R · ML · AWS S3 · Tableau</span> <span class="edu-year">(Sep 2021 – May 2023)</span></p>
-            <ul class="exp-bullets">
-              <li>Modeled demand elasticity across <strong>5,000+ stores</strong> using linear mixed-effects regression, generating a <strong>$1M–$3M profit increase</strong> while limiting customer churn to 1%.</li>
-              <li>Delivered executive-ready Tableau dashboards and scenario analysis to inform pricing roadmaps and influence leadership decisions.</li>
-              <li>Streamlined the Pricing-as-a-Service data pipeline, <strong>boosting efficiency by 30%</strong> and supporting client acquisition through success story presentations.</li>
-            </ul>
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            Open to Full-Time Roles
           </div>
         </div>
-
-        <div class="exp-item">
-          <div class="exp-header">
-            <div class="edu-institute">
-              <img src="media/Images/Samsung-logo.png" alt="Samsung" class="edu-logo">
-              <strong>Samsung Research Institute (PRISM Team)</strong>
-            </div>
-            <span class="edu-year">Jan 2021 – Jun 2021</span>
+        <div class="hero-right">
+          <div class="hero-prompt mono">&gt; whoami</div>
+          <h1 class="hero-name">Harsh Gupta</h1>
+          <div class="hero-role">
+            <span class="role-slash mono">// </span><span id="typewriter" class="mono"></span><span class="typer-cursor">|</span>
           </div>
-          <p class="exp-role">Computer Vision Research Intern <span class="exp-stack">Python · NumPy · OpenCV</span></p>
-          <ul class="exp-bullets">
-            <li>Developed a CV algorithm to enhance low-light astrophotography captured on mobile phones, significantly improving the signal-to-noise ratio using advanced image processing techniques.</li>
-            <li>Co-authored an IEEE research paper; received <strong>Samsung Excellence Award</strong> ($300 reward) for outstanding contributions to the PRISM internship program.</li>
-          </ul>
+          <p class="hero-tagline">
+            I build the systems between raw data and real decisions: pipelines that process millions of records,
+            models that surface signal from noise, and AI agents that automate what used to take hours.
+          </p>
+          <div class="hero-tags">
+            <span class="htag"><i class="fas fa-building"></i> Ex-Deloitte</span>
+            <span class="htag"><i class="fas fa-microchip"></i> Ex-Samsung Research</span>
+            <span class="htag"><i class="fas fa-graduation-cap"></i> MS Data Science @ IU · 4.0 GPA</span>
+          </div>
+          <div class="hero-links">
+            <a href="https://www.linkedin.com/in/harshg1347/" target="_blank" class="hlink"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Harsh1347" target="_blank" class="hlink"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://scholar.google.com/citations?user=7bmWYigAAAAJ&hl=en" target="_blank" class="hlink"><i class="fas fa-graduation-cap"></i> Scholar</a>
+            <a href="mailto:harsh.gupta34@outlook.com" class="hlink"><i class="fas fa-envelope"></i> Email</a>
+          </div>
+          <!-- resume button hidden for now -->
         </div>
-
       </div>
     </section>
 
-    <section id="projects">
-      <h2><i class="fas fa-lightbulb"></i> Projects & Publications</h2>
-
-      <details>
-        <summary>Publications</summary>
-        <div class="grid-3">
-          <div class="project-card">
-            <h3>Star identification in night sky images using mobile phone camera</h3>
-            <img src="media/Images/Astro.png" alt="Certificate 3" class="certificate-img">  
-            <a href="https://ieeexplore.ieee.org/abstract/document/9774242" target="_blank" class="github-link">
-              <i class="fas fa-file-alt"></i> View Paper
-            </a>
-            <!-- <p>Link:<a href="https://ieeexplore.ieee.org/abstract/document/9774242" target="_blank">https://ieeexplore.ieee.org/abstract/document/9774242</a></p> -->
-            <!-- <p class="tags">#SW #Bot</p> -->
+    <!-- ── IMPACT METRICS ── -->
+    <section id="impact" class="section impact-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="eyebrow mono">// by the numbers</span>
+          <h2 class="section-title">Impact at Scale</h2>
+        </div>
+        <div class="impact-grid">
+          <div class="impact-card" data-target="3" data-prefix="$" data-suffix="M+">
+            <div class="impact-icon"><i class="fas fa-dollar-sign"></i></div>
+            <div class="impact-num mono"><span class="counter">$0M+</span></div>
+            <div class="impact-label">Revenue Impact</div>
+            <div class="impact-ctx">pricing elasticity model across 5,000+ stores · Deloitte</div>
           </div>
-          <div class="project-card">
-            <h3>Cross-Geography Generalization of Machine Learning Methods for Classification of Flooded Regions in Aerial Images</h3>
-            <img src="media/Images/floodestimation.png" alt="Certificate 3" class="certificate-img">
-            <a href="https://arxiv.org/abs/2210.01588" target="_blank" class="github-link">
-              <i class="fas fa-file-alt"></i> View Paper
-            </a>
-            <!-- <p>Link:<a href="https://arxiv.org/abs/2210.01588" target="_blank"></a></p> -->
-            <!-- <p class="tags">#DS #Covid</p> -->
+          <div class="impact-card" data-target="15" data-suffix="M">
+            <div class="impact-icon"><i class="fas fa-database"></i></div>
+            <div class="impact-num mono"><span class="counter">0M</span></div>
+            <div class="impact-label">Records / Day</div>
+            <div class="impact-ctx">nightly batch ETL pipeline · AWS Glue + PySpark · Deloitte</div>
+          </div>
+          <div class="impact-card" data-target="75" data-suffix="%">
+            <div class="impact-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="impact-num mono"><span class="counter">0%</span></div>
+            <div class="impact-label">Forecast Error Cut</div>
+            <div class="impact-ctx">dining swipe predictions from ±2,000 to ±500/day · $2K–$3K daily savings · IU</div>
+          </div>
+          <div class="impact-card" data-target="6" data-suffix="×">
+            <div class="impact-icon"><i class="fas fa-bolt"></i></div>
+            <div class="impact-num mono"><span class="counter">0×</span></div>
+            <div class="impact-label">Pipeline Throughput</div>
+            <div class="impact-ctx">distributed Azure compute · forecasting pipeline · IU</div>
+          </div>
+          <div class="impact-card" data-target="250" data-suffix="+">
+            <div class="impact-icon"><i class="fas fa-users"></i></div>
+            <div class="impact-num mono"><span class="counter">0+</span></div>
+            <div class="impact-label">Staff Served</div>
+            <div class="impact-ctx">RAG knowledge base · lookup time cut from 25 min to &lt;10 min · IU</div>
+          </div>
+          <div class="impact-card" data-target="210" data-suffix="K">
+            <div class="impact-icon"><i class="fab fa-youtube"></i></div>
+            <div class="impact-num mono"><span class="counter">0K</span></div>
+            <div class="impact-label">YouTube Views</div>
+            <div class="impact-ctx">Streamlit tutorial series · 13.5K hrs watch time</div>
           </div>
         </div>
-      </details>
-
-      <details>
-        <summary>AI / ML</summary>
-        <div class="grid-3">
-          <div class="project-card">
-            <h3>TA-Lite</h3>
-            <img src="media/Images/TA-Lite.png" alt="Certificate 3" class="certificate-img"> 
-            <p>A modular, instructor-aligned teaching assistant powered by LLMs.</p>
-            <a href="https://github.com/Harsh1347/TA-Lite" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-            <a href="https://www.youtube.com/watch?v=fAarlPmUz_4" target="_blank" class="github-link">
-              <i class="fab fa-youtube"></i> View Demo
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>MockChain</h3>
-            <img src="media/Images/MockChain.png" alt="Certificate 3" class="certificate-img"> 
-            <p>Multi-agent AI-powered mock interview platform with personalized feedback.</p>
-            <a href="https://github.com/Harsh1347/MockChain" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-            <a href="https://www.youtube.com/watch?v=PiKd0AuFQQ0" target="_blank" class="github-link">
-              <i class="fab fa-youtube"></i> View Demo
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>DataLens</h3>
-            <p>LLM-powered RAG search and Q&A for structured and unstructured data. Internal Deloitte Project</p>
-            <a href="media/Cert_Achi/Applause Award-Hackathon.pdf.png" target="_blank" class="github-link">
-              <i class="fas fa-award"></i> View Certificate
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>Online Sign Recognition</h3>
-            <img src="media/Images/Sign.png" alt="Certificate 3" class="certificate-img"> 
-            <p>Time-series handwriting recognition and fraud detection.</p>
-            <a href="media/Pdf/Report_Harsh_Gupta.pdf" target="_blank" class="github-link">
-              <i class="fas fa-file-alt"></i> View Report
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>Music Emotion Recognition</h3>
-            <img src="media/Images/music.png" alt="Certificate 3" class="certificate-img">
-            <p>Classify music into emotions using ML.</p>
-            <a href="media/Pdf/MER_Draft_Paper.pdf" target="_blank" class="github-link">
-              <i class="fas fa-file-alt"></i> View Report
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>Flight Price Prediction</h3>
-            <p>Collected data and trained model to predict flight prices.</p>
-            <a href="https://github.com/Harsh1347/Flight_Fare_Prediction" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>SprintlessAI</h3>
-            <p>Generates Agile user stories from a requirements document + codebase context using RAG. Outputs structured stories and supports optional upload to Jira or GitHub.</p>
-            <a href="https://github.com/Harsh1347/SprintlessAI" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>Semantic Intent Router</h3>
-            <p>Multi-agent routing pipeline that classifies user intent, retrieves the relevant domain via FAISS vector search, and dispatches to the correct agent — all using open-source embeddings.</p>
-          </div>
-        </div>
-      </details>
-
-      <details>
-        <summary>Data Science, Engineering & Visualization</summary>
-        <div class="grid-3">
-          <div class="project-card">
-            <h3>Retail Sales Price Optimization</h3>
-            <img src="media/Images/price_recommendation.png" alt="Certificate 3" class="certificate-img"> 
-            <p>Used price elasticity modeling to recommend optimal pricing in retail.</p>
-            <a href="https://github.com/Harsh1347/Retail-Sales-Price-Optimization" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>Retail Store Pricing Dashboard</h3>
-            <img src="media/Images/Retail-Store-Pricing-Dashboard.png" alt="Certificate 3" class="certificate-img">  
-            <p>Dashboard for visualizing product and city trends in retail pricing.</p>
-            <a href="https://app.powerbi.com/view?r=eyJrIjoiNDJiMjU5YWMtYTg1YS00NGZjLTkzNTEtM2Q5MjEyZTgwZmRmIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9" target="_blank" class="github-link">
-              <i class="fas fa-chart-line"></i> View Dashboard
-            </a>
-            <a href="https://github.com/Harsh1347/Retail-Store-Pricing-Dashboard" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>CodETL</h3>
-            <p>ETL engine with rule-based code generation. Cut dev time by 40%. (Deloitte Internal Project)</p>
-          </div>
-          <div class="project-card">
-            <h3>Analyzing & Visualizing Google Analytics Data for HRA UI</h3>
-            <img src="media/Images/Infoviz.png" alt="Certificate 3" class="certificate-img">  
-            <p>Built an interactive dashboard using Google Analytics data to visualize the user journey. It mapped how users interacted with the interface, highlighted the most used features, and tracked adoption of new functionalities. This helped identify which features were driving engagement and which needed improvement.</p>
-            <a href="https://public.tableau.com/app/profile/ishwari.dawkhar/viz/InfoViz_FinalDashboard/Dashboard_Image2" target="_blank" class="github-link">
-              <i class="fas fa-chart-line"></i> View Dashboard
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>Covid Dashboard</h3>
-            <img src="media/Images/covid-dash.gif" alt="Certificate 3" class="certificate-img">  
-            <p>Dashboard that scraped and visualized India's COVID-19 stats.</p>
-            <a href="https://github.com/Harsh1347/Covid-19-India-DashBoard" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-      </details>
-
-      <details>
-        <summary>Computer Vision</summary>
-        <div class="grid-3">
-          <div class="project-card">
-            <h3>Drowsy Driver Assistant</h3>
-            <img src="media/Images/ComputerVisionPoster.png" alt="Certificate 3" class="certificate-img">
-            <p>Created a computer vision–based system to detect driver drowsiness using in-car cameras. The system issued real-time alerts, and in severe cases, initiated autonomous vehicle control to safely guide the car to the shoulder and halt, while sending an emergency alert.</p>
-            <a href="media/Images/ComputerVisionPoster.png" target="_blank" class="github-link">
-              <i class="fas fa-file-alt"></i> View Poster
-            </a>
-            <a href="https://www.youtube.com/watch?v=3adJHVBXS8U" target="_blank" class="github-link">
-              <i class="fab fa-youtube"></i> View Demo
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>Astrophotography</h3>
-            <img src="media/Images/Astro.png" alt="Certificate 3" class="certificate-img">
-            <p>Collaborated with Samsung R&D to develop a system that enhances night sky images captured on mobile devices. Improved signal-to-noise ratio to deliver clearer visuals and more accurate star detection.</p>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9774242" target="_blank" class="github-link">
-              <i class="fas fa-file-alt"></i> View Paper
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>Estimation of Flooded Regions</h3>
-            <img src="media/Images/floodestimation.png" alt="Certificate 3" class="certificate-img">
-            <p>Cross-region flood segmentation using UAV aerial imagery.</p>
-            <a href="https://arxiv.org/abs/2210.01588" target="_blank" class="github-link">
-              <i class="fas fa-file-alt"></i> View Paper
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>Virtual Mouse using Python-OpenCV</h3>
-            <img src="media/Images/virtual_mouse.gif" alt="Certificate 3" class="certificate-img">
-            <p>Gesture-based virtual mouse using OpenCV hand tracking.</p>
-            <a href="https://github.com/Harsh1347/OpenCV_Work" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>Image to Text using CNN</h3>
-            <img src="media/Images/Image-to-Text-OpenCV.png" alt="Certificate 3" class="certificate-img">
-            <p>Handwritten text to digital using OpenCV and CNN prediction.</p>
-            <a href="https://github.com/Harsh1347/Image-to-Text-OpenCV" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-      </details>
-
-      <details>
-        <summary>Miscellaneous</summary>
-        <div class="grid-3">
-          <div class="project-card">
-            <h3>Streamlit Youtube Playlist</h3>
-            <img src="media/Images/yt.png" alt="Certificate 3" class="certificate-img">
-            <p>Create a series of video explaining how to use streamlit. Gathered over 210k views and 13.5k hrs of watch time</p>
-            <a href="https://www.youtube.com/playlist?list=PLuU3eVwK0I9PT48ZBYAHdKPFazhXg76h5" target="_blank" class="github-link">
-              <i class="fab fa-youtube"></i> View on Youtube
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>Sneaker Update Bot</h3>
-            <p>Created a real-time Discord bot that alerted users about sneaker drops and restocks. It supported a client’s resale business, generating $300K in sales across 1,000+ pairs.</p>
-            <a href="https://github.com/Harsh1347/Sneaker-Notification-Discord-Bot" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-          <div class="project-card">
-            <h3>Covid Vaccine Appointment Bot</h3>
-            <p>Alerts for vaccine slots by scraping using zip codes.</p>
-          </div>
-          <div class="project-card">
-            <h3>University Assistant Chatbot</h3>
-            <p>NLP-powered FAQ chatbot for university queries. Built a custom dataset and trained multiple NLP models for intent classification and response generation. Served clients across 5+ countries.</p>
-          </div>
-        </div>
-      </details>
-
-    </section>
-    
-    <section id="honors">
-      <h2><i class="fas fa-award"></i> Honors & Certifications</h2>
-      <details>
-        <summary>Certifications</summary>
-        <div class="grid-3">
-          <div class="project-card">
-            <h3>Databricks Fundamentals</h3>
-            <a href="https://credentials.databricks.com/08f657e1-358b-4435-8d7c-3365cea25bb9#acc.aWGmz3ZQ" target="_blank">
-            <!-- <img src="media/Cert_Achi/BadgeDB.png" alt="Certificate 1" class="certificate-img"> -->
-            <img src="media/Cert_Achi/DataBricks.png" alt="Certificate 1" class="certificate-img">
-            </a>
-            <!-- <p class="tags">#AI #LLM #EdTech</p> -->
-          </div>
-          <div class="project-card">
-            <h3>IBM Professional Certification</h3>
-            <a href="media/Cert_Achi/DataScienceCoursera.pdf.png" target="_blank">
-            <img src="media/Cert_Achi/DataScienceCoursera.pdf.png" alt="Certificate 1" class="certificate-img">
-            </a>
-            <!-- <p class="tags">#AI #LLM #EdTech</p> -->
-          </div>
-          <div class="project-card">
-            <h3>Deloitte AI Academy</h3>
-            <a href="media/Cert_Achi/Deloitte_AI_Academy_Harsh Gupta.pdf.png" target="_blank">
-            <img src="media/Cert_Achi/Deloitte_AI_Academy_Harsh Gupta.pdf.png" alt="Certificate 2"class="certificate-img">
-            </a>
-            <!-- <p class="tags">#AI #LLM #Interview</p> -->
-          </div>
-          <div class="project-card">
-            <h3>APEX Certificate</h3>
-            <a href="media/Cert_Achi/APEX_2022_Certificate.png" target="_blank">
-            <img src="media/Cert_Achi/APEX_2022_Certificate.png" alt="Certificate 4"class="certificate-img">
-            </a>
-            <!-- <p class="tags">#AI #LLM #RAG</p> -->
-          </div>
-          <div class="project-card">
-            <h3>Tableau</h3>
-            <a href="media/Cert_Achi/TableauCert.jpeg" target="_blank">
-            <img src="media/Cert_Achi/TableauCert.jpeg" alt="Certificate 5" class="certificate-img">
-            </a>
-            <!-- <p class="tags">#ML</p> -->
-          </div>
-        </div>
-      </details>
-
-      <details>
-        <summary>Honors</summary>
-        <div class="grid-3">
-          <div class="project-card">
-            <h3>Samsung Excellence Award</h3>
-            <a href="media/Cert_Achi/Samsung Excellence Award.pdf.png" target="_blank">
-            <img src="media/Cert_Achi/Samsung Excellence Award.pdf.png" alt="Certificate 3" class="certificate-img">
-            </a>
-            <!-- <p class="tags">#AI #LLM #EdTech</p> -->
-          </div>
-          <div class="project-card">
-            <h3>Deloitte Outstanding Award</h3>
-            <a href="media/Cert_Achi/Outstanding Performance Award Certificate of Appreciation Lincoln.pdf.png" target="_blank">
-            <img src="media/Cert_Achi/Outstanding Performance Award Certificate of Appreciation Lincoln.pdf.png"
-              alt="Certificate 3" class="certificate-img">
-              </a>
-            <!-- <img src="media/Cert_Achi/Outstanding Performance Award Lincoln.pdf.png" alt="Certificate 3">   -->
-            <!-- <p class="tags">#AI #LLM #Interview</p> -->
-          </div>
-          <div class="project-card">
-            <h3>Deloitte Applause Award - QSR Client</h3>
-            <a href="media/Cert_Achi/Applause Award Dunkin.pdf.png" target="_blank">
-            <img src="media/Cert_Achi/Applause Award Dunkin.pdf.png" alt="Certificate 2" class="certificate-img">
-            </a>
-            <!-- <p class="tags">#AI #LLM #RAG</p> -->
-          </div>
-          <div class="project-card">
-            <h3>Deloitte Applause Award - Insurance Client</h3>
-            <a href="media/Cert_Achi/Applause Award AHQ.pdf.png" target="_blank">
-            <img src="media/Cert_Achi/Applause Award AHQ.pdf.png" alt="Certificate 1" class="certificate-img">
-            </a>
-            <!-- <p class="tags">#ML</p> -->
-          </div>
-          <div class="project-card">
-            <h3>Deloitte Applause Award - Hackathon</h3>
-            <a href="media/Cert_Achi/Applause Award-Hackathon.pdf.png" target="_blank">
-            <img src="media/Cert_Achi/Applause Award-Hackathon.pdf.png" alt="Certificate 3" class="certificate-img">
-            </a>
-            <!-- <p class="tags">#ML</p> -->
-          </div>
-          <div class="project-card">
-            <h3>APEX Training - Best Presentation</h3>
-            <a href="media/Cert_Achi/Apex_Special_mentions.png" target="_blank">
-            <img src="media/Cert_Achi/Apex_Special_mentions.png" alt="Certificate 3" class="certificate-img">
-            </a>
-            <!-- <p class="tags">#ML</p> -->
-          </div>
-        </div>
-      </details>
+      </div>
     </section>
 
-    <div class="reach-out">
-      Feel free to reach out via
-      <a href="mailto:hagupta@iu.edu">email</a>
-      or connect on
-      <a href="https://www.linkedin.com/in/harshg1347/" target="_blank">LinkedIn</a>.
+    <!-- ── WHAT I BUILD ── -->
+    <section id="what-i-do" class="section pipeline-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="eyebrow mono">// full stack flow</span>
+          <h2 class="section-title">What I Build</h2>
+          <p class="section-sub">End-to-end systems, from raw ingestion to deployed intelligence.</p>
+        </div>
+        <div class="pipeline-track">
+          <div class="pipeline-card">
+            <div class="pl-badge">Layer 0</div>
+            <div class="pl-icon"><i class="fas fa-database"></i></div>
+            <h3>Ingestion &amp; ETL</h3>
+            <p>Reliable pipelines to ingest, clean, and unify data from structured and unstructured sources at scale.</p>
+            <div class="pl-tags"><span>AWS Glue</span><span>PySpark</span><span>ADF</span><span>Airflow</span></div>
+          </div>
+          <div class="pipeline-arrow"><i class="fas fa-chevron-right"></i></div>
+          <div class="pipeline-card">
+            <div class="pl-badge">Layer 1</div>
+            <div class="pl-icon"><i class="fas fa-sliders-h"></i></div>
+            <h3>Processing &amp; Analytics</h3>
+            <p>Transforming raw data into meaningful features, metrics, and insights that drive downstream modeling.</p>
+            <div class="pl-tags"><span>Spark</span><span>SQL</span><span>Tableau</span><span>Power BI</span></div>
+          </div>
+          <div class="pipeline-arrow"><i class="fas fa-chevron-right"></i></div>
+          <div class="pipeline-card">
+            <div class="pl-badge">Layer 2</div>
+            <div class="pl-icon"><i class="fas fa-brain"></i></div>
+            <h3>Modeling &amp; Intelligence</h3>
+            <p>Training ML models to predict, classify, and forecast outcomes, from elasticity models to time-series forecasting.</p>
+            <div class="pl-tags"><span>Scikit-learn</span><span>PyTorch</span><span>XGBoost</span><span>Time Series</span></div>
+          </div>
+          <div class="pipeline-arrow"><i class="fas fa-chevron-right"></i></div>
+          <div class="pipeline-card">
+            <div class="pl-badge">Layer 3</div>
+            <div class="pl-icon"><i class="fas fa-robot"></i></div>
+            <h3>GenAI &amp; Agentic Systems</h3>
+            <p>LLM-powered apps, RAG pipelines, and multi-agent systems that reason, act, and automate workflows end-to-end.</p>
+            <div class="pl-tags"><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>MCP</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CAREER (Education + Experience) ── -->
+    <section id="experience" class="section career-section">
+      <div class="section-inner">
+        <div class="career-grid">
+
+          <!-- LEFT: Education -->
+          <div class="career-col" id="education">
+            <div class="section-header">
+              <span class="eyebrow mono">// background</span>
+              <h2 class="section-title">Education</h2>
+            </div>
+            <div class="edu-stack">
+              <div class="edu-card">
+                <div class="edu-stripe"></div>
+                <img src="media/Images/IU-logo.jpg" alt="IU" class="edu-logo">
+                <div class="edu-body">
+                  <div class="edu-inst">Indiana University Bloomington</div>
+                  <div class="edu-deg">MS in Data Science</div>
+                  <div class="edu-meta">
+                    <span class="mono">Aug 2024 – May 2026</span>
+                  </div>
+                  <div class="edu-gpa">GPA: <strong class="kpi">4.0 / 4.0</strong></div>
+                  <div class="edu-loc"><i class="fas fa-map-marker-alt"></i> Bloomington, IN, USA</div>
+                </div>
+              </div>
+              <div class="edu-card">
+                <div class="edu-stripe"></div>
+                <img src="media/Images/Manipal-logo.jpeg" alt="Manipal" class="edu-logo">
+                <div class="edu-body">
+                  <div class="edu-inst">Manipal Institute of Technology</div>
+                  <div class="edu-deg">B.Tech — Electronics &amp; Communication</div>
+                  <div class="edu-sub">Minor in Data Science</div>
+                  <div class="edu-meta">
+                    <span class="mono">Jul 2017 – May 2021</span>
+                  </div>
+                  <div class="edu-gpa">GPA: <strong>8.13 / 10</strong></div>
+                  <div class="edu-loc"><i class="fas fa-map-marker-alt"></i> Manipal, India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Experience -->
+          <div class="career-col">
+            <div class="section-header">
+              <span class="eyebrow mono">// work history</span>
+              <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="timeline">
+
+          <!-- IU Part-Time -->
+          <div class="tl-item">
+            <div class="tl-node"><div class="tl-dot"></div></div>
+            <div class="tl-card">
+              <div class="exp-head">
+                <div class="exp-company">
+                  <img src="media/Images/IU-logo.jpg" alt="IU" class="co-logo">
+                  <div>
+                    <div class="co-name">Indiana University Bloomington</div>
+                    <div class="co-date mono">Oct 2024 – Present</div>
+                  </div>
+                </div>
+                <span class="exp-badge-current">Current</span>
+              </div>
+              <div class="exp-role">Part-Time AI/ML Engineer</div>
+              <div class="exp-stack">
+                <span>Azure</span><span>Python</span><span>LangChain</span><span>LLM</span><span>RAG</span><span>NLP</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Built and deployed <strong>Chat AIU</strong>, a multi-tenant RAG platform powering chatbots on <span class="kpi">10+ IU department websites</span>, with self-service knowledge ingestion from Confluence, documents, sitemaps, and URLs.</li>
+                <li>Improved retrieval quality via semantic reranking and LLM evaluation pipelines; extended with <strong>MCP, A2A, and OpenAPI agent integrations</strong> for tool-augmented conversational AI.</li>
+                <li>Building an ML/LLM decision support system for parking appeals: classifying violations, extracting policy clauses, generating reviewer rationale via fine-tuned <strong>SmolLM (135M)</strong>, cutting adjudication time from <span class="kpi">weeks to days</span>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- IU Campus Auxiliaries -->
+          <div class="tl-item">
+            <div class="tl-node"><div class="tl-dot"></div></div>
+            <div class="tl-card">
+              <div class="exp-head">
+                <div class="exp-company">
+                  <img src="media/Images/IUB-AUX-logo.jpeg" alt="IU Aux" class="co-logo">
+                  <div>
+                    <div class="co-name">Indiana University Campus Auxiliaries</div>
+                    <div class="co-date mono">Jun 2025 – Aug 2025</div>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-role">AI &amp; Data Engineer Intern</div>
+              <div class="exp-stack">
+                <span>Azure AI Search</span><span>Azure ML</span><span>Python</span><span>FastAPI</span><span>LangChain</span><span>Time Series</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Designed and built a document ingestion pipeline onboarding <span class="kpi">12,000+ Confluence pages</span> into Azure AI Search, automating extraction, chunking, embedding, and index updates.</li>
+                <li>Improved retrieval accuracy from <span class="kpi">76% → 93%</span> via metadata filtering &amp; reranking; deployed RAG system enabling <span class="kpi">250+ staff</span> to cut document lookup from 20–25 min to <span class="kpi">&lt;10 min</span>.</li>
+                <li>Built time-series forecasting models reducing dining footfall forecast error from <span class="kpi">~2,000 swipes to ±500/day</span>, driving <span class="kpi">$2K–$3K daily operational cost savings</span>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Deloitte -->
+          <div class="tl-item">
+            <div class="tl-node"><div class="tl-dot"></div></div>
+            <div class="tl-card">
+              <div class="exp-head">
+                <div class="exp-company">
+                  <img src="media/Images/Deloitte-logo.jpeg" alt="Deloitte" class="co-logo">
+                  <div>
+                    <div class="co-name">Deloitte – Strategy &amp; Analytics</div>
+                    <div class="co-date mono">Sep 2021 – Jul 2024</div>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-sub-block">
+                <div class="exp-role">Data Engineer – FSI Domain</div>
+                <div class="exp-stack">
+                  <span>AWS Glue</span><span>PySpark</span><span>OracleDB</span><span>Postgres</span><span>Airflow</span>
+                </div>
+                <ul class="exp-bullets">
+                  <li>Engineered nightly batch ETL pipelines processing <span class="kpi">12–15M insurance records/batch</span> into Landing → Staging → ODS architecture with row-level audit tracking and reusable transformation modules.</li>
+                  <li>Orchestrated pipelines with AWS Glue Workflows + EventBridge + SNS alerting, <span class="kpi">reducing issue resolution time by 25–30%</span>.</li>
+                  <li>Built <strong>CodETL</strong>, a platform-agnostic ETL engine enabling <span class="kpi">25+ transformations</span> and <span class="kpi">reducing development effort by 40%</span>. Presented at <strong>Deloitte AI &amp; DE Summit</strong>.</li>
+                </ul>
+              </div>
+              <div class="exp-sub-block">
+                <div class="exp-role">Data Scientist – Customer Strategy &amp; Pricing</div>
+                <div class="exp-stack">
+                  <span>Python</span><span>R</span><span>ML</span><span>AWS S3</span><span>Tableau</span>
+                </div>
+                <ul class="exp-bullets">
+                  <li>Developed a linear mixed-effects regression model across <span class="kpi">5,000+ store locations</span>, generating a <span class="kpi">$1M–$3M profit increase</span> while limiting customer churn to <span class="kpi">1%</span>.</li>
+                  <li>Built <strong>DataLens</strong>, an LLM-powered RAG portal for natural language querying over structured and unstructured enterprise data.</li>
+                  <li>Earned <span class="kpi">4+ firm awards</span> for successful delivery of 3 internal systems.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Samsung -->
+          <div class="tl-item">
+            <div class="tl-node"><div class="tl-dot"></div></div>
+            <div class="tl-card">
+              <div class="exp-head">
+                <div class="exp-company">
+                  <img src="media/Images/Samsung-logo.png" alt="Samsung" class="co-logo">
+                  <div>
+                    <div class="co-name">Samsung Research Institute – PRISM</div>
+                    <div class="co-date mono">Jan 2021 – Jun 2021</div>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-role">Computer Vision Research Intern</div>
+              <div class="exp-stack">
+                <span>Python</span><span>OpenCV</span><span>NumPy</span><span>Image Processing</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Developed a CV algorithm to enhance low-light astrophotography on mobile phones, improving signal-to-noise ratio using advanced image processing techniques.</li>
+                <li>Co-authored IEEE research paper; received <strong>Samsung Excellence Award</strong> for outstanding contributions to the PRISM internship program.</li>
+              </ul>
+            </div>
+          </div>
+
+            </div><!-- /timeline -->
+          </div><!-- /career-col right -->
+
+        </div><!-- /career-grid -->
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects" class="section projects-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="eyebrow mono">// selected work</span>
+          <h2 class="section-title">Projects &amp; Publications</h2>
+        </div>
+        <div class="filter-bar">
+          <button class="filter-pill active" data-filter="all">All</button>
+          <button class="filter-pill" data-filter="genai">GenAI</button>
+          <button class="filter-pill" data-filter="data-eng">Data Eng</button>
+          <button class="filter-pill" data-filter="ml">ML</button>
+          <button class="filter-pill" data-filter="cv">Computer Vision</button>
+          <button class="filter-pill" data-filter="tools">Tools</button>
+          <button class="filter-pill" data-filter="publication">Publications</button>
+        </div>
+        <div class="projects-grid">
+
+          <!-- Chat AIU – FEATURED -->
+          <div class="project-card featured" data-category="genai">
+            <div class="feat-label">Featured</div>
+            <img src="media/Images/chat-aiu.svg" alt="Chat AIU" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">GenAI · RAG Platform</div>
+              <h3 class="proj-title">Chat AIU</h3>
+              <p class="proj-impact">Multi-tenant RAG platform powering chatbots on <strong>10+ IU department websites</strong> with self-service knowledge ingestion from Confluence, sitemaps, and documents.</p>
+              <div class="proj-stack"><span>Azure AI Search</span><span>LangChain</span><span>FastAPI</span><span>Python</span><span>MCP</span></div>
+              <div class="proj-links"><span class="internal-tag"><i class="fas fa-lock"></i> Internal IU Project</span></div>
+            </div>
+          </div>
+
+          <!-- TA-Lite – FEATURED -->
+          <div class="project-card featured" data-category="genai">
+            <div class="feat-label">Featured</div>
+            <img src="media/Images/TA-Lite.png" alt="TA-Lite" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">GenAI · EdTech</div>
+              <h3 class="proj-title">TA-Lite</h3>
+              <p class="proj-impact">Instructor-aligned LLM teaching assistant with RAG over course materials, with configurable hint depth, topic scope, and prompt personas.</p>
+              <div class="proj-stack"><span>Ollama</span><span>LangChain</span><span>SQL</span><span>Python</span></div>
+              <div class="proj-links">
+                <a href="https://github.com/Harsh1347/TA-Lite" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.youtube.com/watch?v=fAarlPmUz_4" target="_blank"><i class="fab fa-youtube"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MockChain – FEATURED -->
+          <div class="project-card featured" data-category="genai">
+            <div class="feat-label">Featured</div>
+            <img src="media/Images/MockChain.png" alt="MockChain" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">GenAI · Multi-Agent</div>
+              <h3 class="proj-title">MockChain</h3>
+              <p class="proj-impact">Multi-agent, voice-enabled AI interview simulator with orchestrated agents for question generation, evaluation, and adaptive feedback across role-specific scenarios.</p>
+              <div class="proj-stack"><span>LangGraph</span><span>Python</span><span>Hugging Face</span><span>Speech-to-Text</span></div>
+              <div class="proj-links">
+                <a href="https://github.com/Harsh1347/MockChain" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.youtube.com/watch?v=PiKd0AuFQQ0" target="_blank"><i class="fab fa-youtube"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- DataLens -->
+          <div class="project-card" data-category="genai">
+            <img src="media/Images/datalens.svg" alt="DataLens" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">GenAI · Enterprise</div>
+              <h3 class="proj-title">DataLens</h3>
+              <p class="proj-impact">LLM-powered RAG portal for natural language querying over structured and unstructured enterprise data. Presented at Deloitte AI &amp; DE Summit.</p>
+              <div class="proj-stack"><span>LangChain</span><span>AWS S3</span><span>Flask</span><span>Postgres</span></div>
+              <div class="proj-links">
+                <a href="media/Cert_Achi/Applause Award-Hackathon.pdf.png" target="_blank"><i class="fas fa-award"></i> Award</a>
+                <span class="internal-tag"><i class="fas fa-lock"></i> Deloitte Internal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SprintlessAI -->
+          <div class="project-card" data-category="genai">
+            <img src="media/Images/sprintlessai.svg" alt="SprintlessAI" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">GenAI · DevTools</div>
+              <h3 class="proj-title">SprintlessAI</h3>
+              <p class="proj-impact">Generates Agile user stories from requirements docs + codebase context via RAG. Outputs structured stories and supports upload to Jira and GitHub.</p>
+              <div class="proj-stack"><span>RAG</span><span>Python</span><span>FAISS</span><span>Streamlit</span></div>
+              <div class="proj-links"><a href="https://github.com/Harsh1347/SprintlessAI" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+            </div>
+          </div>
+
+          <!-- Semantic Intent Router -->
+          <div class="project-card" data-category="genai">
+            <img src="media/Images/intent-router.svg" alt="Semantic Intent Router" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">GenAI · Multi-Agent</div>
+              <h3 class="proj-title">Semantic Intent Router</h3>
+              <p class="proj-impact">FAISS-based multi-agent routing pipeline that classifies user intent, retrieves the relevant domain, and dispatches to the correct agent using open-source embeddings.</p>
+              <div class="proj-stack"><span>FAISS</span><span>Embeddings</span><span>Python</span><span>LangChain</span></div>
+            </div>
+          </div>
+
+          <!-- CodETL -->
+          <div class="project-card" data-category="data-eng">
+            <img src="media/Images/codetl.svg" alt="CodETL" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">Data Eng · Tooling</div>
+              <h3 class="proj-title">CodETL</h3>
+              <p class="proj-impact">Platform-agnostic ETL engine with Airflow-orchestrated topologically sorted schedules, achieving a <strong>40% reduction in dev time</strong> across 25+ transformations.</p>
+              <div class="proj-stack"><span>PySpark</span><span>Airflow</span><span>Flask</span><span>Postgres</span></div>
+              <div class="proj-links"><span class="internal-tag"><i class="fas fa-lock"></i> Deloitte Internal</span></div>
+            </div>
+          </div>
+
+          <!-- Retail Price Optimization -->
+          <div class="project-card" data-category="data-eng ml">
+            <img src="media/Images/price_recommendation.png" alt="Retail Pricing" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">ML · Pricing</div>
+              <h3 class="proj-title">Retail Sales Price Optimization</h3>
+              <p class="proj-impact">Price elasticity modeling across 5,000+ store locations driving $1M–$3M profit increase while limiting churn to 1%.</p>
+              <div class="proj-stack"><span>Python</span><span>R</span><span>Mixed-Effects Regression</span><span>AWS S3</span></div>
+              <div class="proj-links"><a href="https://github.com/Harsh1347/Retail-Sales-Price-Optimization" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+            </div>
+          </div>
+
+          <!-- Retail Dashboard -->
+          <div class="project-card" data-category="data-eng">
+            <img src="media/Images/Retail-Store-Pricing-Dashboard.png" alt="Dashboard" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">Data Eng · Visualization</div>
+              <h3 class="proj-title">Retail Store Pricing Dashboard</h3>
+              <p class="proj-impact">Power BI dashboard visualizing product and city-level pricing trends and scenarios across retail locations.</p>
+              <div class="proj-stack"><span>Power BI</span><span>Python</span><span>SQL</span></div>
+              <div class="proj-links">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiNDJiMjU5YWMtYTg1YS00NGZjLTkzNTEtM2Q5MjEyZTgwZmRmIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9" target="_blank"><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="https://github.com/Harsh1347/Retail-Store-Pricing-Dashboard" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sign Recognition -->
+          <div class="project-card" data-category="ml">
+            <img src="media/Images/Sign.png" alt="Sign Recognition" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">ML · Time Series</div>
+              <h3 class="proj-title">Online Sign Recognition</h3>
+              <p class="proj-impact">Time-series handwriting recognition and fraud detection using sequential ML models on pen-stroke data.</p>
+              <div class="proj-stack"><span>Python</span><span>Time Series</span><span>Scikit-learn</span></div>
+              <div class="proj-links"><a href="media/Pdf/Report_Harsh_Gupta.pdf" target="_blank"><i class="fas fa-file-alt"></i> Report</a></div>
+            </div>
+          </div>
+
+          <!-- Music Emotion -->
+          <div class="project-card" data-category="ml">
+            <img src="media/Images/music.png" alt="Music Emotion" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">ML · Audio</div>
+              <h3 class="proj-title">Music Emotion Recognition</h3>
+              <p class="proj-impact">ML classifier mapping audio spectral features to emotional categories using deep learning.</p>
+              <div class="proj-stack"><span>Python</span><span>TensorFlow</span><span>Audio DSP</span></div>
+              <div class="proj-links"><a href="media/Pdf/MER_Draft_Paper.pdf" target="_blank"><i class="fas fa-file-alt"></i> Paper</a></div>
+            </div>
+          </div>
+
+          <!-- Flight Price -->
+          <div class="project-card" data-category="ml">
+            <img src="media/Images/flight-price.svg" alt="Flight Price Prediction" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">ML · Prediction</div>
+              <h3 class="proj-title">Flight Price Prediction</h3>
+              <p class="proj-impact">Scraped flight data and trained ensemble models to predict ticket prices across routes and date ranges.</p>
+              <div class="proj-stack"><span>Python</span><span>Scikit-learn</span><span>XGBoost</span></div>
+              <div class="proj-links"><a href="https://github.com/Harsh1347/Flight_Fare_Prediction" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+            </div>
+          </div>
+
+          <!-- Astrophotography -->
+          <div class="project-card" data-category="cv publication">
+            <img src="media/Images/Astro.png" alt="Astrophotography" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">Computer Vision · Research</div>
+              <h3 class="proj-title">Astrophotography Enhancement</h3>
+              <p class="proj-impact">Samsung R&amp;D collaboration on a CV algorithm for low-light mobile astrophotography. IEEE published. Samsung Excellence Award.</p>
+              <div class="proj-stack"><span>Python</span><span>OpenCV</span><span>Image Processing</span></div>
+              <div class="proj-links"><a href="https://ieeexplore.ieee.org/abstract/document/9774242" target="_blank"><i class="fas fa-file-alt"></i> IEEE Paper</a></div>
+            </div>
+          </div>
+
+          <!-- Flood Estimation -->
+          <div class="project-card" data-category="cv publication ml">
+            <img src="media/Images/floodestimation.png" alt="Flood Estimation" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">Computer Vision · Research</div>
+              <h3 class="proj-title">Flood Region Estimation</h3>
+              <p class="proj-impact">Cross-geography generalization of ML models for classifying flooded regions in UAV aerial imagery. arXiv published.</p>
+              <div class="proj-stack"><span>Python</span><span>Deep Learning</span><span>Segmentation</span></div>
+              <div class="proj-links"><a href="https://arxiv.org/abs/2210.01588" target="_blank"><i class="fas fa-file-alt"></i> arXiv</a></div>
+            </div>
+          </div>
+
+          <!-- Drowsy Driver -->
+          <div class="project-card" data-category="cv">
+            <img src="media/Images/ComputerVisionPoster.png" alt="Drowsy Driver" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">Computer Vision · Safety</div>
+              <h3 class="proj-title">Drowsy Driver Assistant</h3>
+              <p class="proj-impact">Real-time drowsiness detection that autonomously guides the car to the shoulder and sends an emergency alert on critical detection.</p>
+              <div class="proj-stack"><span>Python</span><span>OpenCV</span><span>Deep Learning</span></div>
+              <div class="proj-links">
+                <a href="media/Images/ComputerVisionPoster.png" target="_blank"><i class="fas fa-file-alt"></i> Poster</a>
+                <a href="https://www.youtube.com/watch?v=3adJHVBXS8U" target="_blank"><i class="fab fa-youtube"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Virtual Mouse -->
+          <div class="project-card" data-category="cv">
+            <img src="media/Images/virtual_mouse.gif" alt="Virtual Mouse" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">Computer Vision · HCI</div>
+              <h3 class="proj-title">Virtual Mouse</h3>
+              <p class="proj-impact">Gesture-based virtual mouse using OpenCV hand tracking for full cursor and click control without hardware.</p>
+              <div class="proj-stack"><span>Python</span><span>OpenCV</span><span>MediaPipe</span></div>
+              <div class="proj-links"><a href="https://github.com/Harsh1347/OpenCV_Work" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+            </div>
+          </div>
+
+          <!-- Streamlit YT -->
+          <div class="project-card" data-category="tools">
+            <img src="media/Images/yt.png" alt="YouTube" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">Content · Education</div>
+              <h3 class="proj-title">Streamlit Tutorial Series</h3>
+              <p class="proj-impact"><strong>210K+ views</strong> and <strong>13.5K hrs</strong> watch time on a YouTube series covering how to build data apps with Streamlit.</p>
+              <div class="proj-stack"><span>Streamlit</span><span>Python</span><span>YouTube</span></div>
+              <div class="proj-links"><a href="https://www.youtube.com/playlist?list=PLuU3eVwK0I9PT48ZBYAHdKPFazhXg76h5" target="_blank"><i class="fab fa-youtube"></i> Playlist</a></div>
+            </div>
+          </div>
+
+          <!-- Sneaker Bot -->
+          <div class="project-card" data-category="tools">
+            <img src="media/Images/sneaker-bot.svg" alt="Sneaker Bot" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">Tools · Automation</div>
+              <h3 class="proj-title">Sneaker Update Discord Bot</h3>
+              <p class="proj-impact">Real-time Discord bot for sneaker drops, supporting a client's resale business that generated <strong>$300K in sales</strong> across <strong>1,000+ pairs</strong>.</p>
+              <div class="proj-stack"><span>Python</span><span>Discord API</span><span>Web Scraping</span></div>
+              <div class="proj-links"><a href="https://github.com/Harsh1347/Sneaker-Notification-Discord-Bot" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+            </div>
+          </div>
+
+          <!-- University Chatbot -->
+          <div class="project-card" data-category="tools ml">
+            <img src="media/Images/university-chatbot.svg" alt="University Chatbot" class="proj-thumb">
+            <div class="proj-body">
+              <div class="proj-cat">NLP · Chatbot</div>
+              <h3 class="proj-title">University Assistant Chatbot</h3>
+              <p class="proj-impact">NLP-powered FAQ chatbot for university queries. Custom dataset + multi-model intent classification. Served clients across <strong>5+ countries</strong>.</p>
+              <div class="proj-stack"><span>Python</span><span>NLP</span><span>Intent Classification</span></div>
+            </div>
+          </div>
+
+        </div><!-- /projects-grid -->
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills" class="section skills-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="eyebrow mono">// tech stack</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-head"><i class="fas fa-code"></i><h3>Programming Foundations</h3></div>
+            <div class="skill-chips">
+              <span class="chip p">Python</span><span class="chip p">SQL</span><span class="chip p">PySpark</span>
+              <span class="chip">R</span><span class="chip">TypeScript</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-head"><i class="fas fa-robot"></i><h3>LLM &amp; AI Systems</h3></div>
+            <div class="skill-chips">
+              <span class="chip p">RAG</span><span class="chip p">LangChain</span><span class="chip p">LangGraph</span>
+              <span class="chip p">Vector Search</span><span class="chip">Hybrid Search (BM25 + Vector)</span>
+              <span class="chip">Cross-Encoder Reranking</span><span class="chip">Embeddings</span>
+              <span class="chip">Azure AI Search</span><span class="chip">Semantic Kernel</span>
+              <span class="chip">MCP</span><span class="chip">Ollama</span><span class="chip">Hugging Face</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-head"><i class="fas fa-database"></i><h3>Data Engineering &amp; Platforms</h3></div>
+            <div class="skill-chips">
+              <span class="chip p">Apache Spark</span><span class="chip p">ETL / ELT Pipelines</span>
+              <span class="chip p">AWS Glue</span><span class="chip p">Azure Data Factory</span>
+              <span class="chip">Airflow</span><span class="chip">dbt</span><span class="chip">Kafka</span>
+              <span class="chip">Snowflake</span><span class="chip">MongoDB</span>
+              <span class="chip">Data Modeling (Fact / Dim)</span><span class="chip">Data Quality &amp; Lineage</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-head"><i class="fas fa-brain"></i><h3>Machine Learning &amp; MLOps</h3></div>
+            <div class="skill-chips">
+              <span class="chip p">Scikit-learn</span><span class="chip p">PyTorch</span><span class="chip p">TensorFlow</span>
+              <span class="chip">Time Series Forecasting</span><span class="chip">Regression &amp; Clustering</span>
+              <span class="chip">Computer Vision</span><span class="chip">A/B Testing</span>
+              <span class="chip">Statistical Inference</span><span class="chip">Model Fine-tuning</span>
+              <span class="chip">Docker</span><span class="chip">CI/CD</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-head"><i class="fas fa-cloud"></i><h3>Cloud, Storage &amp; Analytics</h3></div>
+            <div class="skill-chips">
+              <span class="chip p">AWS (Glue, S3, Redshift, EC2)</span>
+              <span class="chip p">Azure (ML, ADF, AI Search)</span>
+              <span class="chip">GCP</span><span class="chip">OracleDB</span>
+              <span class="chip">Postgres</span><span class="chip">Amazon Aurora</span>
+              <span class="chip">Hadoop</span><span class="chip">Tableau</span><span class="chip">Power BI</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-head"><i class="fas fa-server"></i><h3>Backend &amp; APIs</h3></div>
+            <div class="skill-chips">
+              <span class="chip p">FastAPI</span><span class="chip p">REST APIs</span>
+              <span class="chip">Flask</span><span class="chip">Git / GitHub</span><span class="chip">OpenAPI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HONORS ── -->
+    <section id="honors" class="section honors-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="eyebrow mono">// recognition</span>
+          <h2 class="section-title">Honors &amp; Certifications</h2>
+        </div>
+
+        <h3 class="honors-sub">Certifications</h3>
+        <div class="honors-grid">
+          <div class="honor-card">
+            <a href="https://credentials.databricks.com/08f657e1-358b-4435-8d7c-3365cea25bb9#acc.aWGmz3ZQ" target="_blank" class="honor-link">
+              <div class="honor-icon-placeholder"><i class="fas fa-certificate"></i></div>
+              <div class="honor-title">Databricks Fundamentals</div>
+            </a>
+          </div>
+          <div class="honor-card">
+            <a href="media/Cert_Achi/DataScienceCoursera.pdf.png" target="_blank" class="honor-link">
+              <img src="media/Cert_Achi/DataScienceCoursera.pdf.png" alt="IBM" class="honor-img">
+              <div class="honor-title">IBM Professional Certification</div>
+            </a>
+          </div>
+          <div class="honor-card">
+            <a href="media/Cert_Achi/Deloitte_AI_Academy_Harsh Gupta.pdf.png" target="_blank" class="honor-link">
+              <img src="media/Cert_Achi/Deloitte_AI_Academy_Harsh Gupta.pdf.png" alt="Deloitte AI" class="honor-img">
+              <div class="honor-title">Deloitte AI Academy</div>
+            </a>
+          </div>
+          <div class="honor-card">
+            <a href="media/Cert_Achi/TableauCert.jpeg" target="_blank" class="honor-link">
+              <img src="media/Cert_Achi/TableauCert.jpeg" alt="Tableau" class="honor-img">
+              <div class="honor-title">Tableau Certified</div>
+            </a>
+          </div>
+          <div class="honor-card">
+            <a href="media/Cert_Achi/APEX_2022_Certificate.png" target="_blank" class="honor-link">
+              <img src="media/Cert_Achi/APEX_2022_Certificate.png" alt="APEX" class="honor-img">
+              <div class="honor-title">APEX Certificate 2022</div>
+            </a>
+          </div>
+        </div>
+
+        <h3 class="honors-sub">Awards</h3>
+        <div class="honors-grid">
+          <div class="honor-card">
+            <a href="media/Cert_Achi/Samsung Excellence Award.pdf.png" target="_blank" class="honor-link">
+              <img src="media/Cert_Achi/Samsung Excellence Award.pdf.png" alt="Samsung" class="honor-img">
+              <div class="honor-title">Samsung Excellence Award</div>
+            </a>
+          </div>
+          <div class="honor-card">
+            <a href="media/Cert_Achi/Outstanding Performance Award Certificate of Appreciation Lincoln.pdf.png" target="_blank" class="honor-link">
+              <img src="media/Cert_Achi/Outstanding Performance Award Certificate of Appreciation Lincoln.pdf.png" alt="Outstanding" class="honor-img">
+              <div class="honor-title">Deloitte Outstanding Performance</div>
+            </a>
+          </div>
+          <div class="honor-card">
+            <a href="media/Cert_Achi/Applause Award Dunkin.pdf.png" target="_blank" class="honor-link">
+              <img src="media/Cert_Achi/Applause Award Dunkin.pdf.png" alt="Applause QSR" class="honor-img">
+              <div class="honor-title">Deloitte Applause – QSR Client</div>
+            </a>
+          </div>
+          <div class="honor-card">
+            <a href="media/Cert_Achi/Applause Award AHQ.pdf.png" target="_blank" class="honor-link">
+              <img src="media/Cert_Achi/Applause Award AHQ.pdf.png" alt="Applause Insurance" class="honor-img">
+              <div class="honor-title">Deloitte Applause – Insurance</div>
+            </a>
+          </div>
+          <div class="honor-card">
+            <a href="media/Cert_Achi/Applause Award-Hackathon.pdf.png" target="_blank" class="honor-link">
+              <img src="media/Cert_Achi/Applause Award-Hackathon.pdf.png" alt="Hackathon" class="honor-img">
+              <div class="honor-title">Deloitte Hackathon Award</div>
+            </a>
+          </div>
+          <div class="honor-card">
+            <a href="media/Cert_Achi/Apex_Special_mentions.png" target="_blank" class="honor-link">
+              <img src="media/Cert_Achi/Apex_Special_mentions.png" alt="APEX Best" class="honor-img">
+              <div class="honor-title">APEX – Best Presentation</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <div class="cta-bar">
+      <p class="cta-text">Actively seeking full-time roles in Data Engineering, ML Engineering, AI/LLM Systems, or Data Science.</p>
+      <div class="cta-links">
+        <a href="mailto:harsh.gupta34@outlook.com" class="cta-btn primary"><i class="fas fa-envelope"></i> harsh.gupta34@outlook.com</a>
+        <a href="https://www.linkedin.com/in/harshg1347/" target="_blank" class="cta-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
     </div>
 
+    <footer>
+      <span>© Harsh Gupta</span>
+      <span class="foot-sep">·</span>
+      <span>Built with HTML, CSS &amp; JS</span>
+      <span class="foot-sep">·</span>
+      <span class="mono">2026</span>
+    </footer>
+
   </main>
-  <footer>
-    © Harsh Gupta · Built with HTML & CSS · Last updated 2026
-  </footer>
 
-  <button id="backToTop" title="Back to Top">⬆ Top</button>
+  <button id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
 
   <script>
-    const topBtn = document.getElementById("backToTop");
-    window.onscroll = () => {
-      topBtn.style.display = (window.scrollY > 300) ? "block" : "none";
-    };
-    topBtn.onclick = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-  </script>
-  <script>
-    const sidebar = document.querySelector('.sidebar');
-    const toggleBtn = document.getElementById('toggleSidebar');
-    toggleBtn.onclick = () => {
-      sidebar.classList.toggle('collapsed');
-      document.querySelector('main').classList.toggle('collapsed');
-    };
-  </script>
-  <script>
-  function toggleEdu(btn) {
-    const more = btn.nextElementSibling;
-    const isOpen = more.style.display === "block";
+  // ── Sidebar toggle
+  const sidebar = document.getElementById('sidebar');
+  document.getElementById('toggleSidebar').addEventListener('click', () => {
+    sidebar.classList.toggle('collapsed');
+  });
 
-    more.style.display = isOpen ? "none" : "block";
-    btn.textContent = isOpen ? "Learn more" : "Show less";
+  // ── Typewriter
+  const roles = ['Data Scientist', 'Data Engineer', 'AI Systems Engineer', 'ML Engineer'];
+  let ri = 0, ci = 0, del = false;
+  const tw = document.getElementById('typewriter');
+  function type() {
+    const cur = roles[ri];
+    if (del) {
+      tw.textContent = cur.substring(0, --ci);
+      if (ci === 0) { del = false; ri = (ri + 1) % roles.length; setTimeout(type, 400); return; }
+    } else {
+      tw.textContent = cur.substring(0, ++ci);
+      if (ci === cur.length) { setTimeout(() => { del = true; type(); }, 2200); return; }
+    }
+    setTimeout(type, del ? 45 : 80);
   }
-  </script>
+  setTimeout(type, 800);
 
-  <script>
-    const carousels = {};
-
-    function initCarousel(id) {
-      const container = document.getElementById(id);
-      const slides = container.querySelectorAll("img");
-      let index = 0;
-
-      function showSlide(i) {
-        index = (i + slides.length) % slides.length;
-        container.style.transform = `translateX(-${index * 100}%)`;
-        carousels[id].index = index;
+  // ── Counter animation
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const card = entry.target;
+      const target = parseFloat(card.dataset.target);
+      const prefix = card.dataset.prefix || '';
+      const suffix = card.dataset.suffix || '';
+      const el = card.querySelector('.counter');
+      const duration = 1600;
+      let start = null;
+      function step(ts) {
+        if (!start) start = ts;
+        const pct = Math.min((ts - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - pct, 3);
+        const val = Math.floor(ease * target);
+        el.textContent = prefix + val + suffix;
+        if (pct < 1) requestAnimationFrame(step);
+        else el.textContent = prefix + target + suffix;
       }
-
-      carousels[id] = {
-        container,
-        slides,
-        index,
-        showSlide,
-        next: () => showSlide(carousels[id].index + 1),
-        prev: () => showSlide(carousels[id].index - 1),
-      };
-
-      // Start auto-rotation
-      carousels[id].interval = setInterval(() => carousels[id].next(), 5000);
-    }
-
-    function nextSlide(id) {
-      if (carousels[id]) carousels[id].next();
-    }
-
-    function prevSlide(id) {
-      if (carousels[id]) carousels[id].prev();
-    }
-
-    window.addEventListener("DOMContentLoaded", () => {
-      initCarousel("CertCarousel");
-      initCarousel("awardsCarousel");
+      requestAnimationFrame(step);
+      counterObserver.unobserve(card);
     });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.impact-card').forEach(c => counterObserver.observe(c));
+
+  // ── Project filter
+  const pills = document.querySelectorAll('.filter-pill');
+  const cards = document.querySelectorAll('.project-card');
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      const f = pill.dataset.filter;
+      cards.forEach(card => {
+        const cats = card.dataset.category.split(' ');
+        card.style.display = (f === 'all' || cats.includes(f)) ? 'flex' : 'none';
+      });
+    });
+  });
+
+  // ── Back to top
+  const topBtn = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    topBtn.classList.toggle('visible', window.scrollY > 400);
+  });
+  topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // ── Active nav on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const navObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+      }
+    });
+  }, { threshold: 0.25 });
+  sections.forEach(s => navObs.observe(s));
   </script>
-
-
 
 </body>
-
 </html>

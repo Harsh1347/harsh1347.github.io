@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0e0e1a"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="0.9" fill="rgba(0,212,255,0.06)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="360" fill="url(#bg)"/>
+  <rect width="800" height="360" fill="url(#dots)"/>
+
+  <!-- Globe / world context (left) -->
+  <circle cx="140" cy="180" r="80" fill="rgba(0,212,255,0.04)" stroke="rgba(0,212,255,0.15)" stroke-width="1.5"/>
+  <!-- Globe lines -->
+  <ellipse cx="140" cy="180" rx="80" ry="30" fill="none" stroke="rgba(0,212,255,0.08)" stroke-width="1"/>
+  <ellipse cx="140" cy="180" rx="80" ry="60" fill="none" stroke="rgba(0,212,255,0.06)" stroke-width="1"/>
+  <line x1="140" y1="100" x2="140" y2="260" stroke="rgba(0,212,255,0.08)" stroke-width="1"/>
+  <line x1="60"  y1="180" x2="220" y2="180" stroke="rgba(0,212,255,0.08)" stroke-width="1"/>
+  <!-- Country flags (simplified colored dots with labels) -->
+  <circle cx="110" cy="145" r="5" fill="rgba(0,212,255,0.5)"/>
+  <text x="120" y="149" fill="rgba(0,212,255,0.5)" font-family="monospace" font-size="8">US</text>
+  <circle cx="165" cy="155" r="5" fill="rgba(124,58,237,0.6)"/>
+  <text x="175" y="159" fill="rgba(124,58,237,0.6)" font-family="monospace" font-size="8">IN</text>
+  <circle cx="118" cy="200" r="5" fill="rgba(0,212,255,0.4)"/>
+  <text x="128" y="204" fill="rgba(0,212,255,0.4)" font-family="monospace" font-size="8">UK</text>
+  <circle cx="155" cy="210" r="5" fill="rgba(124,58,237,0.5)"/>
+  <text x="165" y="214" fill="rgba(124,58,237,0.5)" font-family="monospace" font-size="8">AU</text>
+  <circle cx="95" cy="175" r="5" fill="rgba(0,212,255,0.45)"/>
+  <text x="105" y="179" fill="rgba(0,212,255,0.45)" font-family="monospace" font-size="8">CA</text>
+  <text x="140" y="258" text-anchor="middle" fill="rgba(0,212,255,0.3)" font-family="monospace" font-size="8">5+ Countries</text>
+
+  <!-- Connection lines from globe to chat -->
+  <line x1="220" y1="155" x2="286" y2="140" stroke="rgba(0,212,255,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="220" y1="180" x2="286" y2="200" stroke="rgba(0,212,255,0.15)" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Chat interface -->
+  <rect x="286" y="56" width="380" height="248" rx="14" fill="rgba(0,0,0,0.35)" stroke="rgba(0,212,255,0.2)" stroke-width="1.5"/>
+  <!-- Chat header -->
+  <rect x="286" y="56" width="380" height="48" rx="14" fill="rgba(0,212,255,0.07)"/>
+  <rect x="286" y="80" width="380" height="24" fill="rgba(0,212,255,0.07)"/>
+  <circle cx="312" cy="80" r="14" fill="rgba(0,212,255,0.12)" stroke="rgba(0,212,255,0.3)" stroke-width="1"/>
+  <text x="312" y="85" text-anchor="middle" fill="#00d4ff" font-size="13">🎓</text>
+  <text x="334" y="75" fill="rgba(255,255,255,0.7)" font-family="monospace" font-size="11" font-weight="600">UniBot Assistant</text>
+  <text x="334" y="90" fill="rgba(0,212,255,0.4)" font-family="monospace" font-size="8">NLP-powered · Always on</text>
+  <circle cx="638" cy="80" r="5" fill="#22c55e"/>
+
+  <!-- User message -->
+  <rect x="400" y="122" width="250" height="36" rx="10" fill="rgba(0,212,255,0.1)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
+  <text x="415" y="138" fill="rgba(255,255,255,0.65)" font-family="monospace" font-size="9">"What are the admission</text>
+  <text x="415" y="151" fill="rgba(255,255,255,0.65)" font-family="monospace" font-size="9"> requirements for MS CS?"</text>
+  <text x="648" y="168" text-anchor="end" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="8">You · 10:24 AM</text>
+
+  <!-- Intent tag -->
+  <rect x="400" y="172" width="90" height="16" rx="8" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="445" y="184" text-anchor="middle" fill="rgba(167,139,250,0.7)" font-family="monospace" font-size="8">ADMISSIONS</text>
+
+  <!-- Bot response -->
+  <rect x="300" y="196" width="290" height="80" rx="10" fill="rgba(0,212,255,0.05)" stroke="rgba(0,212,255,0.15)" stroke-width="1"/>
+  <circle cx="316" cy="212" r="8" fill="rgba(0,212,255,0.12)" stroke="rgba(0,212,255,0.25)" stroke-width="1"/>
+  <text x="316" y="216" text-anchor="middle" fill="#00d4ff" font-size="9">🤖</text>
+  <text x="330" y="214" fill="rgba(0,212,255,0.6)" font-family="monospace" font-size="9" font-weight="600">UniBot</text>
+  <text x="330" y="228" fill="rgba(255,255,255,0.55)" font-family="monospace" font-size="8">For MS CS you need: GRE 320+,</text>
+  <text x="330" y="241" fill="rgba(255,255,255,0.55)" font-family="monospace" font-size="8">3.0+ GPA, 2 LORs, SOP.</text>
+  <text x="330" y="254" fill="rgba(255,255,255,0.55)" font-family="monospace" font-size="8">Deadline: Dec 15 for Spring.</text>
+  <text x="300" y="284" fill="rgba(0,212,255,0.25)" font-family="monospace" font-size="8">UniBot · 10:24 AM · Confidence: 94%</text>
+
+  <!-- Intent classification visual (right) -->
+  <rect x="686" y="72" width="90" height="200" rx="10" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="731" y="92" text-anchor="middle" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="7" font-weight="600">INTENTS</text>
+  <line x1="694" y1="98" x2="768" y2="98" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <!-- Intent bars -->
+  <text x="698" y="116" fill="rgba(0,212,255,0.5)" font-family="monospace" font-size="7">Admissions</text>
+  <rect x="698" y="120" width="54" height="6" rx="3" fill="rgba(0,212,255,0.4)"/>
+  <text x="756" y="126" fill="rgba(0,212,255,0.6)" font-family="monospace" font-size="7">94%</text>
+
+  <text x="698" y="140" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="7">Financial</text>
+  <rect x="698" y="144" width="8" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+  <text x="756" y="150" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="7">3%</text>
+
+  <text x="698" y="164" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="7">Housing</text>
+  <rect x="698" y="168" width="4" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <text x="756" y="174" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="7">2%</text>
+
+  <text x="698" y="188" fill="rgba(255,255,255,0.15)" font-family="monospace" font-size="7">Courses</text>
+  <rect x="698" y="192" width="3" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <text x="756" y="198" fill="rgba(255,255,255,0.15)" font-family="monospace" font-size="7">1%</text>
+
+  <text x="400" y="332" text-anchor="middle" fill="rgba(0,212,255,0.3)" font-family="monospace" font-size="10" letter-spacing="2">NLP · INTENT CLASSIFICATION · 5+ COUNTRIES SERVED</text>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0e0e1a"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="0.9" fill="rgba(0,212,255,0.06)"/>
+    </pattern>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="360" fill="url(#bg)"/>
+  <rect width="800" height="360" fill="url(#dots)"/>
+
+  <!-- Input query -->
+  <rect x="44" y="144" width="170" height="72" rx="10" fill="rgba(0,212,255,0.06)" stroke="rgba(0,212,255,0.25)" stroke-width="1.5"/>
+  <text x="63" y="168" fill="rgba(0,212,255,0.5)" font-family="monospace" font-size="9">USER QUERY</text>
+  <text x="63" y="186" fill="rgba(255,255,255,0.75)" font-family="monospace" font-size="10" font-weight="500">"Book a flight to</text>
+  <text x="63" y="202" fill="rgba(255,255,255,0.75)" font-family="monospace" font-size="10" font-weight="500"> NYC next week"</text>
+
+  <!-- Arrow to router -->
+  <line x1="216" y1="180" x2="276" y2="180" stroke="rgba(0,212,255,0.4)" stroke-width="2"/>
+  <polygon points="276,174 290,180 276,186" fill="rgba(0,212,255,0.5)"/>
+
+  <!-- FAISS / Vector embedding step -->
+  <rect x="294" y="155" width="110" height="50" rx="8" fill="rgba(0,212,255,0.07)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
+  <text x="349" y="174" text-anchor="middle" fill="rgba(0,212,255,0.6)" font-family="monospace" font-size="9" font-weight="600">FAISS</text>
+  <text x="349" y="189" text-anchor="middle" fill="rgba(0,212,255,0.4)" font-family="monospace" font-size="8">Vector Search</text>
+  <!-- Small dots representing vectors -->
+  <circle cx="312" cy="197" r="2" fill="rgba(0,212,255,0.4)"/>
+  <circle cx="320" cy="200" r="2" fill="rgba(0,212,255,0.3)"/>
+  <circle cx="328" cy="196" r="2" fill="rgba(0,212,255,0.5)"/>
+  <circle cx="336" cy="201" r="2" fill="rgba(0,212,255,0.3)"/>
+  <circle cx="344" cy="197" r="2" fill="rgba(0,212,255,0.4)"/>
+
+  <!-- Arrow to router diamond -->
+  <line x1="406" y1="180" x2="440" y2="180" stroke="rgba(0,212,255,0.4)" stroke-width="2"/>
+  <polygon points="440,174 454,180 440,186" fill="rgba(0,212,255,0.5)"/>
+
+  <!-- Router diamond -->
+  <polygon points="460,140 510,180 460,220 410,180" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.55)" stroke-width="2.5" filter="url(#glow)"/>
+  <text x="460" y="175" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="9" font-weight="700">INTENT</text>
+  <text x="460" y="189" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="9" font-weight="700">ROUTER</text>
+
+  <!-- Lines to agents -->
+  <line x1="510" y1="165" x2="580" y2="90"  stroke="rgba(0,212,255,0.3)" stroke-width="1.5"/>
+  <line x1="510" y1="180" x2="580" y2="180" stroke="rgba(124,58,237,0.4)" stroke-width="2"/>
+  <line x1="510" y1="195" x2="580" y2="270" stroke="rgba(0,212,255,0.3)" stroke-width="1.5"/>
+
+  <!-- Arrow heads -->
+  <polygon points="578,84 592,90 578,96" fill="rgba(0,212,255,0.4)"/>
+  <polygon points="578,174 592,180 578,186" fill="rgba(124,58,237,0.6)"/>
+  <polygon points="578,264 592,270 578,276" fill="rgba(0,212,255,0.4)"/>
+
+  <!-- Agent 1: Travel -->
+  <rect x="594" y="62" width="162" height="56" rx="10" fill="rgba(0,212,255,0.06)" stroke="rgba(0,212,255,0.2)" stroke-width="1.5"/>
+  <text x="614" y="83" fill="rgba(0,212,255,0.5)" font-family="monospace" font-size="9">TRAVEL AGENT</text>
+  <text x="614" y="99" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9">Flights · Hotels · Itinerary</text>
+  <circle cx="734" cy="90" r="12" fill="rgba(0,212,255,0.12)" stroke="rgba(0,212,255,0.3)" stroke-width="1"/>
+  <text x="734" y="94" text-anchor="middle" fill="#00d4ff" font-size="11">✈</text>
+
+  <!-- Agent 2: Finance (matched/active) -->
+  <rect x="594" y="152" width="162" height="56" rx="10" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.5)" stroke-width="2"/>
+  <text x="614" y="173" fill="rgba(167,139,250,0.7)" font-family="monospace" font-size="9">FINANCE AGENT</text>
+  <text x="614" y="189" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9">Prices · Budget · Deals</text>
+  <circle cx="734" cy="180" r="12" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.5)" stroke-width="1"/>
+  <text x="734" y="184" text-anchor="middle" fill="#a78bfa" font-family="monospace" font-size="10" font-weight="700">$</text>
+  <text x="675" y="218" text-anchor="middle" fill="rgba(124,58,237,0.6)" font-family="monospace" font-size="8">MATCHED</text>
+
+  <!-- Agent 3: Support -->
+  <rect x="594" y="242" width="162" height="56" rx="10" fill="rgba(0,212,255,0.06)" stroke="rgba(0,212,255,0.2)" stroke-width="1.5"/>
+  <text x="614" y="263" fill="rgba(0,212,255,0.5)" font-family="monospace" font-size="9">SUPPORT AGENT</text>
+  <text x="614" y="279" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="9">FAQ · Policies · Help</text>
+  <circle cx="734" cy="270" r="12" fill="rgba(0,212,255,0.1)" stroke="rgba(0,212,255,0.25)" stroke-width="1"/>
+  <text x="734" y="274" text-anchor="middle" fill="#00d4ff" font-size="12">?</text>
+
+  <text x="400" y="340" text-anchor="middle" fill="rgba(0,212,255,0.3)" font-family="monospace" font-size="10" letter-spacing="2">FAISS · OPEN-SOURCE EMBEDDINGS · MULTI-AGENT DISPATCH</text>
+</svg>
